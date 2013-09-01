@@ -3,7 +3,7 @@ import tkinter
 'Below we start setting up strings'
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.0.2.0"
+app_version_number = "1.0.2.1"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 'Some GUI stuff'
@@ -73,6 +73,7 @@ def credits():
     print()
     print("GitHub - Thanks for your great hosting both repo and site. <http://github.com>")
     print("Travis-CI - Excellent build slaves continuously testing the code. <http://travis-ci.org>")
+    print("All the people credited in the 'I-wantz-doges' project, you guys helped a lot <http://bit.ly/I-wantz-doges>")
     print()
     commandline()
 def licenses():
