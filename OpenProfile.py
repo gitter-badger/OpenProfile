@@ -2,12 +2,13 @@
 import tkinter
 'Below we start setting up strings'
 app_name = "OpenProfile"
-app_version_number = "1.0.0.0"
+app_name_short = "OP"
+app_version_number = "1.0.0.1"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 app_company = "DeavmiOSS"
 app_description = app_name + " is a free and open-source easy to use autobiography and biography creator written in Python."
-app_description_part1 = app_name + "is a free and open-source easy to use "
+app_description_part1 = app_name + " is a free and open-source easy to use "
 app_description_part2 = "autobiography and biography creator written in Python."
 app_license_url = "http://gnu.org/licenses/gpl.txt"
 app_license = app_name + " is registered under GPLv3"
@@ -18,7 +19,7 @@ app_ui_console_welcomemsg = "Welcome to " + app_name + "!"
 'Getting everything referenced so that we can, "refer"-lol, to them when we need to a.k.a go to them-(the definitions)'
 def exit():
     print()
-    print("")
+    print("Thank you for using " + app_name + ".")
     exit
 def about():
     print()
@@ -29,10 +30,25 @@ def about():
     print(app_description_part1)
     print(app_description_part2)
     print()
+    print(app_license)
+    print()
     print("Below are some helpful links:")
+    print()
+    print("License: " + app_license_url)
+    print("Project site: " + app_info_online_site_url)
 def help():
     print()
-    print("")
+    print("Here are a list of commands that can be used in " + app_name_short + ".")
+    print()
+    print("about         Displays about info")
+    print("exit          Terminates the program")
+    print("help          Displays list of commands")
+    print("start         Starts OpenProfile opperation")
+    str = input()
+    if str == "":
+        app_start()
+    if str == "q":
+        app_start()
 def finish_biography():
     print()
     print("")
