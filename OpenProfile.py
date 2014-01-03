@@ -3,7 +3,7 @@ import tkinter
 'Below we start setting up strings'
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.0.0.1"
+app_version_number = "1.0.0.2"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 app_company = "DeavmiOSS"
@@ -36,6 +36,8 @@ def about():
     print()
     print("License: " + app_license_url)
     print("Project site: " + app_info_online_site_url)
+    print("Source code: " + app_info_online_repository_url)
+    print("Feedback: " + app_info_online_feedback_url)
 def help():
     print()
     print("Here are a list of commands that can be used in " + app_name_short + ".")
