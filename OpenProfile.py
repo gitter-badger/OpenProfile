@@ -3,7 +3,7 @@ import tkinter
 'Below we start setting up strings'
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.0.0.2"
+app_version_number = "1.0.0.3"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 app_company = "DeavmiOSS"
@@ -43,9 +43,14 @@ def help():
     print("Here are a list of commands that can be used in " + app_name_short + ".")
     print()
     print("about         Displays about info")
+    print("credits       Displays credits")
     print("exit          Terminates the program")
     print("help          Displays list of commands")
+    print("licenses      Displays licenses")
     print("start         Starts OpenProfile opperation")
+    print("q             Universally used for quitting")
+    print("(space)       Also universally used for quitting")
+    print()
     str = input()
     if str == "":
         app_start()
