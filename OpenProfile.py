@@ -3,7 +3,7 @@ import tkinter
 'Below we start setting up strings'
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.0.0.5"
+app_version_number = "1.0.0.6"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 app_company = "DeavmiOSS"
@@ -38,6 +38,15 @@ def about():
     print("Project site: " + app_info_online_site_url)
     print("Source code: " + app_info_online_repository_url)
     print("Feedback: " + app_info_online_feedback_url)
+    str = input()
+    if str == "":
+        app_start()
+    if str == "q":
+        app_start()
+def credits():
+    print()
+def licenses():
+    print()
 def help():
     print()
     print("Here are a list of commands that can be used in " + app_name_short + ".")
@@ -50,7 +59,6 @@ def help():
     print("start         Starts OpenProfile opperation")
     print("q             Universally used for quitting")
     print("(return)      Also universally used for quitting")
-    print()
     str = input()
     if str == "":
         app_start()
@@ -83,5 +91,9 @@ def app_start():
         exit()
     if str == "about":
         about()
+    if str == "credits":
+        credits()
+    if str == "licenses":
+        licenses()
 'This is continueing from "setting up strings" code, we are now going to jump into the definition called "app_start"'
 app_start()
