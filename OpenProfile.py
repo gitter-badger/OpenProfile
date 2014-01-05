@@ -3,7 +3,7 @@ import tkinter
 'Below we start setting up strings'
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.0.0.6"
+app_version_number = "1.0.0.7"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 app_company = "DeavmiOSS"
@@ -44,7 +44,11 @@ def about():
     if str == "q":
         app_start()
 def credits():
-    print()
+    str = input()
+    if str == "":
+        app_start()
+    if str == "q":
+        app_start()
 def licenses():
     print()
 def help():
