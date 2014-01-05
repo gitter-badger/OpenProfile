@@ -3,15 +3,18 @@ import tkinter
 'Below we start setting up strings'
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.0.0.7"
+app_version_number = "1.0.1.0"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
-app_company = "DeavmiOSS"
+app_gui_window_title = app_name + " v" + app_version_number + " (gui)"
+app_orginization = "DeavmiOSS"
+app_orginization_message = "This is free and open-source software from " + app_orginization + "."
 app_description = app_name + " is a free and open-source easy to use autobiography and biography creator written in Python."
 app_description_part1 = app_name + " is a free and open-source easy to use "
 app_description_part2 = "autobiography and biography creator written in Python."
 app_license_url = "http://gnu.org/licenses/gpl.txt"
-app_license = app_name + " is registered under GPLv3"
+app_license = "GPLv3"
+app_license_description = app_name + " is registered under " + app_license + "."
 app_info_online_site_url = "http://bit.ly/getopenprofile"
 app_info_online_repository_url = "https://github.com/deavmi/OpenProfile"
 app_info_online_feedback_url = "https//deavmi.github.io/OpenProfile/feedback"
@@ -30,7 +33,9 @@ def about():
     print(app_description_part1)
     print(app_description_part2)
     print()
-    print(app_license)
+    print(app_license_description)
+    print()
+    print(app_orginization_message)
     print()
     print("Below are some helpful links:")
     print()
@@ -38,19 +43,36 @@ def about():
     print("Project site: " + app_info_online_site_url)
     print("Source code: " + app_info_online_repository_url)
     print("Feedback: " + app_info_online_feedback_url)
-    str = input()
-    if str == "":
-        app_start()
-    if str == "q":
-        app_start()
+    print()
+    commandline()
 def credits():
-    str = input()
-    if str == "":
-        app_start()
-    if str == "q":
-        app_start()
+    print()
+    print("Credits of " + app_name + " v" + app_version_number + " .")
+    print()
+    print()
+    print("Developers")
+    print()
+    print("Deavmi - <http://bit.ly/thedeavmi>")
+    print()
+    print("Graphics")
+    print()
+    print("Currently not using any graphics in this application.")
+    print()
+    print("Testers")
+    print()
+    print("Currently we do not have any testers, unless Travis-CI counts.")
+    print()
+    print("Special Thanks")
+    print()
+    print("GitHub - Thanks for your great hosting both repo and site. <http://github.com>")
+    print("Travis-CI - Excellent build slaves continuously testing the code. <http://travis-ci.org>")
+    print()
+    commandline()
 def licenses():
     print()
+    print(app_license_description)
+    print()
+    commandline()
 def help():
     print()
     print("Here are a list of commands that can be used in " + app_name_short + ".")
@@ -60,14 +82,11 @@ def help():
     print("exit          Terminates the program")
     print("help          Displays list of commands")
     print("licenses      Displays licenses")
-    print("start         Starts OpenProfile opperation")
     print("q             Universally used for quitting")
-    print("(return)      Also universally used for quitting")
-    str = input()
-    if str == "":
-        app_start()
-    if str == "q":
-        app_start()
+    print("restart       Restarts " + app_name)
+    print("start         Starts OpenProfile opperation")
+    print()
+    commandline()
 def finish_biography():
     print()
     print("")
@@ -77,14 +96,7 @@ def finish_autobiography():
 def begin():
     print()
     print("")
-def app_start():
-    print("---------------------------------------------------")
-    print(app_name + " v" + app_version_complete)
-    print(app_ui_console_welcomemsg)
-    print("---------------------------------------------------")
-    print()
-    print("Type 'start' to begin or 'help' for help.")
-    print()
+def commandline():
     str = input(">>>")
     if str == "start":
         'Jump to the "begin" definition'
@@ -93,11 +105,26 @@ def app_start():
         help()
     if str == "exit":
         exit()
+    if str == "q":
+        exit()
     if str == "about":
         about()
     if str == "credits":
         credits()
     if str == "licenses":
         licenses()
+    if str == "restart":
+        app_start()
+    if str == "":
+        commandline()
+def app_start():
+    print("---------------------------------------------------")
+    print(app_name + " v" + app_version_complete)
+    print(app_ui_console_welcomemsg)
+    print("---------------------------------------------------")
+    print()
+    print("Type 'start' to begin or 'help' for help.")
+    print()
+    commandline()
 'This is continueing from "setting up strings" code, we are now going to jump into the definition called "app_start"'
 app_start()
