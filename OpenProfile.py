@@ -3,7 +3,7 @@ import tkinter
 'Below we start setting up strings'
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.0.2.1"
+app_version_number = "1.0.2.2"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 'Some GUI stuff'
@@ -32,9 +32,9 @@ def exit():
     exit
 def about():
     print()
-    print("---------------------------------------------------")
-    print("                    " + app_name)
-    print("                 v" + app_version_complete)
+    print("-------------------------------------------------------")
+    print("                      " + app_name)
+    print("                   v" + app_version_complete)
     print()
     print(app_description_part1)
     print(app_description_part2)
@@ -63,7 +63,7 @@ def credits():
     print()
     print("Graphics")
     print()
-    print("Currently not using any graphics in this application.")
+    print("Graphicsfuel - <http://www.graphicsfuel.com>")
     print()
     print("Testers")
     print()
@@ -98,13 +98,16 @@ def help():
     commandline()
 def finish_biography():
     print()
-    print("")
+    print("Below is your biography that " + app_name + " just generated:")
+    print()
 def finish_autobiography():
     print()
-    print("")
+    print("Below is your autobiography that " + app_name + " just generated:")
+    print()
 def begin():
     print()
-    print("")
+    print("Please fill in the following, hit enter to confirm:")
+    print()
 def about_gui():
     print()
     print("Setting up the GUI...")
@@ -159,12 +162,12 @@ def commandline():
     if str == "":
         commandline()
 def app_start():
-    print("---------------------------------------------------")
+    print("-------------------------------------------------------")
     print(app_name + " v" + app_version_complete)
     print(app_ui_console_welcomemsg)
-    print("---------------------------------------------------")
+    print("-------------------------------------------------------")
     print()
-    print("Type 'start' to begin or 'help' for help.")
+    print("Type 'start' to begin or 'help' for a list of commands.")
     print()
     commandline()
 'This is continueing from "setting up strings" code, we are now going to jump into the definition called "app_start"'
