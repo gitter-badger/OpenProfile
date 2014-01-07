@@ -3,7 +3,7 @@ import tkinter
 'Below we start setting up strings'
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.0.2.2"
+app_version_number = "1.0.2.3"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 'Some GUI stuff'
@@ -108,6 +108,12 @@ def begin():
     print()
     print("Please fill in the following, hit enter to confirm:")
     print()
+    str = input("Enter your first name: ")
+    user_names_firstname = str
+    str = input("Enter your middle name: ")
+    user_names_middlename = str
+    str = input("Enter your last name: ")
+    user_names_lastname = str
 def about_gui():
     print()
     print("Setting up the GUI...")
