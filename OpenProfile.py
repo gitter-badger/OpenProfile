@@ -3,7 +3,7 @@ import tkinter
 'Below we start setting up strings'
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.0.2.3"
+app_version_number = "1.0.2.4"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 'Some GUI stuff'
@@ -57,19 +57,20 @@ def credits():
     print("Credits of " + app_name + " v" + app_version_number + " .")
     print()
     print()
-    print("Developers")
+    'I wanted three back slahes but apprently you always have to add +1 to the amount of slahes any way two slahes is enough'
+    print("\\\Developers")
     print()
     print("Deavmi - <http://bit.ly/thedeavmi>")
     print()
-    print("Graphics")
+    print("\\\Graphics")
     print()
     print("Graphicsfuel - <http://www.graphicsfuel.com>")
     print()
-    print("Testers")
+    print("\\\Testers")
     print()
     print("Currently we do not have any testers, unless Travis-CI counts.")
     print()
-    print("Special Thanks")
+    print("\\\Special Thanks")
     print()
     print("GitHub - Thanks for your great hosting both repo and site. <http://github.com>")
     print("Travis-CI - Excellent build slaves continuously testing the code. <http://travis-ci.org>")
@@ -108,12 +109,20 @@ def begin():
     print()
     print("Please fill in the following, hit enter to confirm:")
     print()
+    print("--- Personal details ---")
+    print()
     str = input("Enter your first name: ")
     user_names_firstname = str
     str = input("Enter your middle name: ")
     user_names_middlename = str
     str = input("Enter your last name: ")
     user_names_lastname = str
+    str = input("Enter your nickname: ")
+    user_names_nickname = str
+    str = input("Enter your age: ")
+    user_time_age = str
+    str = input("Enter your date of birth: ")
+    user_time_dateofbirth = str
 def about_gui():
     print()
     print("Setting up the GUI...")
