@@ -3,7 +3,7 @@ import tkinter
 'Below we start setting up strings'
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.0.2.5"
+app_version_number = "1.0.2.6"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 'Some GUI stuff'
@@ -123,6 +123,15 @@ def begin():
     user_time_age = str
     str = input("Enter your date of birth (DD/MM/YYYY): ")
     user_time_dateofbirth = str
+    print()
+    print("--- Location details ---")
+    print()
+    str = input("Enter city: ")
+    user_location_city = str
+    str = input("Enter state/province: ")
+    user_location_state = str
+    str = input("Enter country: ")
+    user_location_country = str
 def about_gui():
     print()
     print("Setting up the GUI...")
