@@ -1,6 +1,8 @@
 OpenProfile
 ===========
-This is the stable branch, the application should be stable.
+
+This is the nightly branch, the application may not be stable.
+
 
 [![Build Status](https://travis-ci.org/deavmi/OpenProfile.png?branch=master)](https://travis-ci.org/deavmi/OpenProfile)
 
