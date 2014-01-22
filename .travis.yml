@@ -4,5 +4,7 @@ python:
   - "3.2"
   - "2.7"
   - "2.6"
+#yeah, thanks GitHub now I know how to make comments. Anyways, this below is for testing against the latest version of Python for iOS.
+  - "2.5.1"
 # command to run tests
 script: nosetests
