@@ -8,6 +8,6 @@ This is the stable branch, the application should be stable.
 
 OpenProfile is a free and open-source easy to use autobiography and biography creator written in Python.
 
-The OpenProfile software stack
+# The OpenProfile software stack
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/deavmi/openprofile/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
