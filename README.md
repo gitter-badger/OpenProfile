@@ -8,10 +8,20 @@ This is the stable branch, the application should be stable.
 
 OpenProfile is a free and open-source easy to use autobiography and biography creator written in Python.
 
-## The OpenProfile software stack
 
-[OpenProfile for Windows/Mac OSX/GNU-Linux]()
-[OpenProfile for iOS]()
-[OpenProfile-lite]()
+### Different builds of OpenProfile:
+
+* [OpenProfile for Windows/Mac OSX/GNU-Linux]()
+
+* [OpenProfile for iOS]()
+
+* [OpenProfile-lite]()
+
+### OpenProfile launchers:
+
+* [OpenProfile First stage/Primary launcher](https://github.com/deavmi/OP-first-stage-launcher_windows)
+* [OpenProfile Second stage/Secondary launcher](https://github.com/deavmi/OP-second-stage-launcher_windows)
+
+
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/deavmi/openprofile/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
