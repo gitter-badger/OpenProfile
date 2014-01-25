@@ -4,7 +4,7 @@ print("Please wait, the application is starting...")
 print("Setting application strings...")
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.4.0.4"
+app_version_number = "1.4.0.5"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 print("Setting application strings... [Done]")
@@ -46,12 +46,17 @@ if app_environment_build_type == "OpenProfile-for-iOS":
 
 'End of awesome stuff'
 'Next stage of awesome stuff'
+print("Checking if the GUI needs to be enabled...")
 if app_environment_gui_enabled == "true":
     'Imports the "tkinter" library"'
+    print("Checking if the GUI needs to be enabled... Yes")
+    print("Importing GUI library...")
     import tkinter
+    print("Importing GUI library... [Done]")
 print(app_name + " build system is running... [Done]")    
 '######### End of next stage awesome stuff #########'    
 'Some GUI stuff'
+print("Continueing setting application strings...")
 app_gui_window_main_title = app_name + " v" + app_version_number + " (gui)"
 app_gui_window_about_title = "About " + app_name
 app_gui_window_main_size = "300x300"
@@ -77,6 +82,7 @@ app_info_online_repository_url = "https://github.com/deavmi/OpenProfile"
 app_info_online_feedback_url = "https//deavmi.github.io/OpenProfile/feedback"
 app_info_online_wiki_url = "https://github.com/deavmi/OpenProfile/wiki"
 app_ui_console_welcomemsg = "Welcome to " + app_name + "!"
+print("Continueing setting application strings... [Done]")
 'Getting everything referenced so that we can, "refer"-lol, to them when we need to a.k.a go to them-(the definitions)'
 def exit():
     print()
