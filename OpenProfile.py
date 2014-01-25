@@ -4,7 +4,7 @@ print("Please wait, the application is starting...")
 print("Setting application strings...")
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.4.0.2"
+app_version_number = "1.4.0.3"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 print("Setting application strings... [Done]")
@@ -16,23 +16,32 @@ print(app_name + " build type is being set...")
 app_environment_build_type = "OpenProfile"
 print(app_name + " build type set to: " + app_environment_build_type)
 '######'
-
+print("Checking for the selected build type's enviroment...")
 '###### OpenProfile ######'
 if app_environment_build_type == "OpenProfile":
+    print("Checking for the selected build type's enviroment... [Done]")
+    print("Setting up the environemnt for the selected build type...")
     app_environment_build_machine_type = "[Windows/Mac OSX/GNU-Linux]"
     app_environment_gui_enabled = "true"
+    print("Setting up the environemnt for the selected build type... [Done]")
 '#################################'
 
 '###### OpenProfile-lite ######'
 if app_environment_build_type == "OpenProfile-lite":
+    print("Checking for the selected build type's enviroment... [Done]")
+    print("Setting up the environemnt for the selected build type...")
     app_environment_build_machine_type = "[Windows/Mac OSX/GNU-Linux (lite)]"
     app_environment_gui_enabled = "false"
+    print("Setting up the environemnt for the selected build type... [Done]")
 '#################################'
 
 '###### OpenProfile-for-iOS ######'
 if app_environment_build_type == "OpenProfile-for-iOS":
+    print("Checking for the selected build type's enviroment... [Done]")
+    print("Setting up the environemnt for the selected build type...")
     app_environment_build_machine_type = "[iOS]"
     app_environment_gui_enabled = "false"
+    print("Setting up the environemnt for the selected build type... [Done]")
 '#################################'
 
 'End of awesome stuff'
