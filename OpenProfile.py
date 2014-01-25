@@ -4,7 +4,7 @@ print("Please wait, the application is starting...")
 print("Setting application strings...")
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.4.0.3"
+app_version_number = "1.4.0.4"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 print("Setting application strings... [Done]")
@@ -156,15 +156,21 @@ def changelog():
     'Must still put stuff here'
     print()
 def help():
+    if app_environment_gui_enabled == "true":
+        app_strings_about_gui_help_string = "about_gui     Displays about info in GUI mode"
+        app_strings_gui_help_string = "gui           Starts OpenProfile in GUI mode"
+    if app_environment_gui_enabled == "false":
+        app_strings_about_gui_help_string = "about_gui     Displays about info in GUI mode (Not available in this build type)"
+        app_strings_gui_help_string = "gui           Starts OpenProfile in GUI mode (Not available in this build type)"
     print()
     print("Here are a list of commands that can be used in " + app_name_short + ".")
     print()
     print("about         Displays about info")
-    print("about_gui     Displays about info in GUI mode")
+    print(app_strings_about_gui_help_string)
     print("changelog     Displays info on how to get the changelog")
     print("credits       Displays credits")
     print("exit          Terminates the program")
-    print("gui           Starts OpenProfile in GUI mode")
+    print(app_strings_gui_help_string)
     print("help          Displays list of commands")
     print("license       Displays the " + app_name + " license")
     print("licenses      Displays all licenses")
