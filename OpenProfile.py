@@ -1,12 +1,40 @@
 'OpenProfile is a free and open-source easy to use autobiography and biography creator written in Python. Copyright (C) 2014 DeavmiOSS'
-'Doing the imports'
-import tkinter
 'Below we start setting up strings'
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.3.0.0"
+app_version_number = "1.4.0.0"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
+'######### Some stuff that makes everthing work awesomely #########'
+'change this for different builds of OpenProfile'
+'######'
+app_environment_build_type = "OpenProfile"
+'######'
+
+'###### OpenProfile ######'
+if app_environment_build_type == "OpenProfile":
+    app_environment_build_machine_type = "[Windows/Mac OSX/GNU-Linux]"
+    app_environment_gui_enabled = "true"
+'#################################'
+
+'###### OpenProfile-lite ######'
+if app_environment_build_type == "OpenProfile-lite":
+    app_environment_build_machine_type = "[Windows/Mac OSX/GNU-Linux (lite)]"
+    app_environment_gui_enabled = "false"
+'#################################'
+
+'###### OpenProfile-for-iOS ######'
+if app_environment_build_type == "OpenProfile-for-iOS":
+    app_environment_build_machine_type = "[iOS]"
+    app_environment_gui_enabled = "false"
+'#################################'
+
+'End of awesome stuff'
+'Next stage of awesome stuff'
+if app_environment_gui_enabled == "true":
+    'Imports the "tkinter" library"'
+    import tkinter
+'######### End of next stage awesome stuff #########'    
 'Some GUI stuff'
 app_gui_window_main_title = app_name + " v" + app_version_number + " (gui)"
 app_gui_window_about_title = "About " + app_name
@@ -233,7 +261,7 @@ def gui():
     
     print("Setting up widgets... [Done]")
     print("Packing the widgets...")
-    'image must be created and then packed here
+    'image must be created and then packed here'
     label1_app_name.pack()
     label2_app_version.pack()
     print("Packing the widgets... [Done]")
@@ -277,7 +305,7 @@ def commandline():
         commandline()
 def app_start():
     print("-------------------------------------------------------")
-    print(app_name + " v" + app_version_complete)
+    print(app_name + " v" + app_version_complete + " " + app_environment_build_machine_type)
     print(app_ui_console_welcomemsg)
     print("-------------------------------------------------------")
     print()
