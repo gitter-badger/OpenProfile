@@ -1,14 +1,17 @@
 'OpenProfile is a free and open-source easy to use autobiography and biography creator written in Python. Copyright (C) 2014 DeavmiOSS'
 'Below we start setting up strings'
 print("Please wait, the application is starting...")
+print("Setting application strings...")
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.4.0.1"
+app_version_number = "1.4.0.2"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
+print("Setting application strings... [Done]")
 '######### Some stuff that makes everthing work awesomely #########'
 'change this for different builds of OpenProfile'
 '######'
+print(app_name + " build system is running...")
 print(app_name + " build type is being set...")
 app_environment_build_type = "OpenProfile"
 print(app_name + " build type set to: " + app_environment_build_type)
@@ -37,6 +40,7 @@ if app_environment_build_type == "OpenProfile-for-iOS":
 if app_environment_gui_enabled == "true":
     'Imports the "tkinter" library"'
     import tkinter
+print(app_name + " build system is running... [Done]")    
 '######### End of next stage awesome stuff #########'    
 'Some GUI stuff'
 app_gui_window_main_title = app_name + " v" + app_version_number + " (gui)"
