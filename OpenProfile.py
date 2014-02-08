@@ -4,7 +4,7 @@ print("Please wait, the application is starting...")
 print("Setting application strings...")
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.4.0.6"
+app_version_number = "1.4.0.7"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 print("Setting application strings... [Done]")
@@ -235,6 +235,11 @@ def begin():
     str = input("Enter current country: ")
     user_location_country = str
     print()
+    print("--- Work ---")
+    str = input("What is your current job: ")
+    user_work_currentjob = str
+    str = input("List your previous jobs (Comma format): ")
+    user_work_previousjobs_list = str
     print("--- Interests & hobbies ---")
     print()
     str = input("List your interests (Comma format): ")
