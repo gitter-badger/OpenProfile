@@ -11,9 +11,9 @@ OpenProfile is a free and open-source easy to use autobiography and biography cr
 
 ### Different builds of OpenProfile:
 
-* [**OpenProfile for Windows/Mac OSX/GNU-Linux**]()
-* [**OpenProfile for iOS**]()
-* [**OpenProfile-lite**]()
+* [**OpenProfile for Windows/Mac OSX/GNU-Linux**](https://github.com/deavmi/OpenProfile/tree/master)
+* [**OpenProfile for iOS**](https://github.com/deavmi/OpenProfile/tree/OpenProfile-lite)
+* [**OpenProfile-lite**](https://github.com/deavmi/OpenProfile/tree/OpenProfile-for-iOS)
 
 ### OpenProfile launchers:
 
