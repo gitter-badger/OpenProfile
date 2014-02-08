@@ -4,7 +4,7 @@ print("Please wait, the application is starting...")
 print("Setting application strings...")
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.4.0.5"
+app_version_number = "1.4.0.6"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 print("Setting application strings... [Done]")
@@ -128,11 +128,11 @@ def credits():
     print()
     print("Currently we do not have any testers, unless Travis-CI counts.")
     print()
-    print("\\\ These sites helped")
+    print("\\\These sites helped")
     print()
     print("QuestionFor - <http://python.questionfor.info/q_python_60818.html>")
     print()
-    print("\\\Special Thanks")
+    print("\\\Special thanks")
     print()
     print("GitHub - Thanks for your great hosting both repo and site. <http://github.com>")
     print("Travis-CI - Excellent build slaves continuously testing the code. <http://travis-ci.org>")
@@ -245,6 +245,8 @@ def begin():
     print()
     print("1. Autobiography")
     print("2. Biography")
+    print()
+    str = input(">>>")
     if str == "1":
        finish_autobiography()
     if str == "2":
