@@ -4,7 +4,7 @@ print("Please wait, the application is starting...")
 print("Setting application strings...")
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.4.0.7"
+app_version_number = "1.4.0.8"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 print("Setting application strings... [Done]")
@@ -126,7 +126,7 @@ def credits():
     print()
     print("\\\Testers")
     print()
-    print("Currently we do not have any testers, unless Travis-CI counts.")
+    print("Walkman - <http://walkman100/github.io/Walkman>")
     print()
     print("\\\These sites helped")
     print()
@@ -187,14 +187,6 @@ def help():
     print("start         Starts OpenProfile opperation")
     print()
     commandline()
-def finish_biography():
-    print()
-    print("Below is your biography that " + app_name + " just generated:")
-    print()
-def finish_autobiography():
-    print()
-    print("Below is your autobiography that " + app_name + " just generated:")
-    print()
 def begin():
     print()
     print("Please fill in the following, hit enter to confirm:")
@@ -246,16 +238,15 @@ def begin():
     user_interests_list = str
     'Not finished with all the Inputs and Outputs yet hay :P :D'
     print()
-    print("Which one of the following would you like to generate?")
+    print("Below is your autobiography that " + app_name + " just generated:")
     print()
-    print("1. Autobiography")
-    print("2. Biography")
+    'Put stuff here'
     print()
-    str = input(">>>")
-    if str == "1":
-       finish_autobiography()
-    if str == "2":
-       finish_biography() 
+    print("-------------------------------------------------------")
+    print()
+    print("Below is your autobiography that " + app_name + " just generated:")
+    print()
+    'Put stuff here'
 def about_gui():
     print()
     print("Setting up the GUI...")
