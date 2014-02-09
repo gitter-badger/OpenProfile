@@ -4,7 +4,7 @@ print("Please wait, the application is starting...")
 print("Setting application strings...")
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.4.0.8"
+app_version_number = "1.4.1.0"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 print("Setting application strings... [Done]")
@@ -236,6 +236,29 @@ def begin():
     print()
     str = input("List your interests (Comma format): ")
     user_interests_list = str
+    print()
+    print("Just completing some cool things...")
+    'If the person is below the age of 13, he is considered a kid/child (thanks mom ;P)'
+    if user_time_age < "13":
+        user_time_age_type  = "kid"
+    'For all the ages below consider the person a teenager (thanks mom ;P, again)'
+    if user_time_age == "13":
+        user_time_age_type = "teenager"
+    if user_time_age == "14":
+        user_time_age_type = "teenager"
+    if user_time_age == "15":
+        user_time_age_type = "teenager"
+    if user_time_age == "16":
+        user_time_age_type = "teenager"
+    if user_time_age == "17":
+        user_time_age_type = "teenager"
+    if user_time_age == "18":
+        user_time_age_type = "teenager"
+    if user_time_age == "19":
+        user_time_age_type = "teenager"
+    'For all the ages above 19, the person is considered an adult (thanks mom, ;P, lol, again) P.S I know, grandparents/people are not included'
+    if user_time_age > "19":
+        user_time_age_type = "adult"
     'Not finished with all the Inputs and Outputs yet hay :P :D'
     print()
     print("Below is your autobiography that " + app_name + " just generated:")
