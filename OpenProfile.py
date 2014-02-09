@@ -4,7 +4,7 @@ print("Please wait, the application is starting...")
 print("Setting application strings...")
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.4.1.0"
+app_version_number = "1.4.1.1"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 print("Setting application strings... [Done]")
@@ -128,9 +128,10 @@ def credits():
     print()
     print("Walkman - <http://walkman100/github.io/Walkman>")
     print()
-    print("\\\These sites helped")
+    print("\\\These sites and people helped")
     print()
     print("QuestionFor - <http://python.questionfor.info/q_python_60818.html>")
+    print("My mom - <no info>")
     print()
     print("\\\Special thanks")
     print()
