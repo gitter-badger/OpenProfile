@@ -10,7 +10,7 @@ OpenProfile is a free and open-source easy to use autobiography and biography cr
 
 ### Command-line
 
-To see a list of commands that can be used in the OpenProfile command-line, visit [this](https://github.com/deavmi/OpenProfile/wiki/Commands) wiki page.
+To see a list of commands that can be used in the OpenProfile command-line and also their descriptions, visit [this](https://github.com/deavmi/OpenProfile/wiki/Commands) wiki page.
 
 ### Different builds of OpenProfile:
 
