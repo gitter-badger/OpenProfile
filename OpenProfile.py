@@ -4,19 +4,25 @@ print("Please wait, the application is starting...")
 print("Setting application strings...")
 app_name = "OpenProfile"
 app_name_short = "OP"
-app_version_number = "1.4.1.2"
+app_version_number = "1.4.2.0"
 app_version_stableness = "pre-beta"
 app_version_complete = app_version_number + " " + app_version_stableness
 print("Setting application strings... [Done]")
-'######### Some stuff that makes everthing work awesomely #########'
-'change this for different builds of OpenProfile'
+'######### Configure your build of OpenProfile #########'
 '######'
 print(app_name + " build system is running...")
 print(app_name + " build type is being set...")
+'!!!!!!!!!!!! These are the only settings (below), so obviously change them if you need to !!!!!!!!!!!!'
 app_environment_build_type = "OpenProfile"
+'Below is for compatibility, because older version of Python want the user to use a captital "T" when importing tkinter.'
+app_environment_build_tkinter_import_mode = "modern"
+'Change this to "true" to enable logs inside the OpenProfile console.'
+app_environment_log2console_enabled = "true"
+'Change this to "true" to make OpenProfile start in GUI mode.'
 print(app_name + " build type set to: " + app_environment_build_type)
 '######'
 print("Checking for the selected build type's enviroment...")
+'Below are the different build types, their code is seperated by these "#"'
 '###### OpenProfile ######'
 if app_environment_build_type == "OpenProfile":
     print("Checking for the selected build type's enviroment... [Done]")
@@ -48,11 +54,21 @@ if app_environment_build_type == "OpenProfile-for-iOS":
 'Next stage of awesome stuff'
 print("Checking if the GUI needs to be enabled...")
 if app_environment_gui_enabled == "true":
+    'Sets up dat string'
+    app_environment_gui_datword = "enabled"
     'Imports the "tkinter" library"'
     print("Checking if the GUI needs to be enabled... Yes")
-    print("Importing GUI library...")
-    import tkinter
-    print("Importing GUI library... [Done]")
+    print("Checking the library import mode...")
+    if app_environment_build_tkinter_import_mode == "modern":
+        print("Library import mode has been set to: modern")
+        print("Importing GUI library...")
+        import tkinter
+        print("Importing GUI library... [Done]")
+    if app_environment_build_tkinter_import_mode == "old":
+        print("Library import mode has been set to: old")
+        print("Importing GUI library...")
+        import Tkinter
+        print("Importing GUI library... [Done]")
 print(app_name + " build system is running... [Done]")    
 '######### End of next stage awesome stuff #########'    
 'Some GUI stuff'
@@ -273,57 +289,87 @@ def begin():
     print("Below is your autobiography that " + app_name + " just generated:")
     print()
     'Put stuff here'
+    commandline()
 def about_gui():
-    print()
-    print("Setting up the GUI...")
-    print("Setting window name...")
-    about = tkinter.Tk()
-    print("Setting window names... [Done]")
-    print("Setting window properties...")
-    print("Setting window size...")
-    about.geometry(app_gui_window_about_size)
-    print("Setting window title...")
-    about.title(app_gui_window_about_title)
-    print("Setting window title... [Done]")
-    print("Setting window properties... [Done]")
-    print("Setting up the GUI... [Done]")
-    print("Creating the window...")
-    about.mainloop()
-    print("Creating the window... [Done - Loop ended]")
-    print()
-    commandline()
-    'This above module is not correct I think yet, IDK how I want it be.'
+   if app_environment_gui_enabled == "true":
+       print("-------------------------------------------------------")
+       print("The gui has been " + app_environment_gui_datword + " for your build type.")
+       print("Build type: " + app_environment_build_type)
+       print("Tkinter import mode: " + app_environment_build_tkinter_import_mode)
+       print("-------------------------------------------------------")
+       print()
+       print("Setting up the GUI...")
+       print("Setting window name...")
+       about = tkinter.Tk()
+       print("Setting window names... [Done]")
+       print("Setting window properties...")
+       print("Setting window size...")
+       about.geometry(app_gui_window_about_size)
+       print("Setting window size... [Done]")
+       print("Setting window title...")
+       about.title(app_gui_window_about_title)
+       print("Setting window title... [Done]")
+       print("Setting window properties... [Done]")
+       print("Setting up the GUI... [Done]")
+       print("Creating the window...")
+       about.mainloop()
+       print("Creating the window... [Done - Loop ended]")
+   if app_environment_gui_enabled == "false":
+       print("-------------------------------------------------------")
+       print("The gui has been " + app_environment_gui_datword + " for your build type.")
+       print("Build type: " + app_environment_build_type)
+       print("Tkinter import mode: " + app_environment_build_tkinter_import_mode)
+       print("-------------------------------------------------------")
+   print()
+   commandline()
 def gui():
-    print()
-    print("Setting up the GUI...")
-    print("Setting window name...")
-    main = tkinter.Tk()
-    print("Setting window names... [Done]")
-    print("Setting window properties...")
-    print("Setting window size...")
-    main.geometry(app_gui_window_main_size)
-    print("Setting window title...")
-    main.title(app_gui_window_main_title)
-    print("Setting window title... [Done]")
-    print("Setting window properties... [Done]")
-    print("Setting up widgets...")
-    'must finish this stuff here'
-    label1_app_name = tkinter.Label(text=app_name)
-    label2_app_version = tkinter.Label(text=app_version_complete)
-    
-    print("Setting up widgets... [Done]")
-    print("Packing the widgets...")
-    'image must be created and then packed here'
-    label1_app_name.pack()
-    label2_app_version.pack()
-    print("Packing the widgets... [Done]")
-    print("Setting up the GUI... [Done]")
-    print("Creating the window...")
-    main.mainloop()
-    print("Creating the window... [Done - Loop ended]")
+    if app_environment_gui_enabled == "true":
+       print("-------------------------------------------------------")
+       print("The gui has been " + app_environment_gui_datword + " for your build type.")
+       print("Build type: " + app_environment_build_type)
+       print("Tkinter import mode: " + app_environment_build_tkinter_import_mode)
+       print("-------------------------------------------------------")
+       print()
+       print("Setting up the GUI...")
+       print("Setting window name...")
+       main = tkinter.Tk()
+       print("Setting window names... [Done]")
+       print("Setting window properties...")
+       print("Setting window size...")
+       main.geometry(app_gui_window_main_size)
+       print("Setting window size... [Done]")
+       print("Setting window title...")
+       main.title(app_gui_window_main_title)
+       print("Setting window title... [Done]")
+       print("Setting window properties... [Done]")
+       print("Setting up widgets...")
+       'must finish this stuff here'
+       label1_app_name = tkinter.Label(text=app_name)
+       label2_app_version = tkinter.Label(text=app_version_complete)
+       button1_get_started = tkinter.Button(text="Get Started", command=begin)
+       button2_about = tkinter.Button(text="About " + app_name, command=about_gui)
+       button3_quit = tkinter.Button(text="Quit " + app_name, command=exit)
+       print("Setting up widgets... [Done]")
+       print("Packing the widgets...")
+       'image must be created and then packed here'
+       label1_app_name.pack()
+       label2_app_version.pack()
+       button1_get_started.pack()
+       button2_about.pack()
+       button3_quit.pack()
+       print("Packing the widgets... [Done]")
+       print("Setting up the GUI... [Done]")
+       print("Creating the window...")
+       main.mainloop()
+       print("Creating the window... [Done - Loop ended]")
+    if app_environment_gui_enabled == "false":
+       print("-------------------------------------------------------")
+       print("The gui has been " + app_environment_gui_datword + " for your build type.")
+       print("Build type: " + app_environment_build_type)
+       print("Tkinter import mode: " + app_environment_build_tkinter_import_mode)
+       print("-------------------------------------------------------")  
     print()
     commandline()
-    'This above module is not correct I think yet, IDK how I want it be.'
 def commandline():
     str = input(">>>")
     if str == "start":
