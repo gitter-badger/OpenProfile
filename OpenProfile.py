@@ -144,7 +144,7 @@ def credits():
     print()
     print("Walkman - <http://walkman100/github.io/Walkman>")
     print()
-    print("\\\These sites and people helped")
+    print("\\\Developers + These sites and people helped")
     print()
     print("QuestionFor - <http://python.questionfor.info/q_python_60818.html>")
     print("My mom - <no info>")
