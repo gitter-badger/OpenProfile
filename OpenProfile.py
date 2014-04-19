@@ -215,8 +215,7 @@ def begin():
     user_names_firstname = input("Enter your first name: ")
     user_names_middlename = input("Enter your middle name: ")
     user_names_lastname = input("Enter your last name: ")
-    str = input("Enter your maiden name: ")
-    user_names_maidenname = str    
+    user_names_maidenname = input("Enter your maiden name: ")
     user_names_nickname = input("Enter your nickname: ")
     user_time_ager = input("Enter your age: ")
     user_time_dateofbirth_day = input("Enter the day of your birth (No. format): ")
@@ -225,18 +224,12 @@ def begin():
     print()
     print("--- Location details ---")
     print()
-    str = input("Enter city of birth: ")
-    user_location_cityofbirth = str
-    str = input("Enter country of birth: ")
-    user_location_countryofbirth = str
-    str = input("Enter current postal code: ")
-    user_location_cityofbirth = str
-    str = input("Enter current city: ")
-    user_location_city = str
-    str = input("Enter current state/province: ")
-    user_location_state = str
-    str = input("Enter current country: ")
-    user_location_country = str
+    user_location_cityofbirth = input("Enter city of birth: ")
+    user_location_countryofbirth = input("Enter country of birth: ")
+    user_location_postalcode = input("Enter current postal code: ")
+    user_location_city = input("Enter current city: ")
+    user_locationr = input("Enter current state/province: ")
+    user_location_countryr = input("Enter current country: ")
     print()
     print("--- Work ---")
     str = input("What is your current job: ")
