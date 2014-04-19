@@ -214,20 +214,14 @@ def begin():
     print()
     user_names_firstname = input("Enter your first name: ")
     user_names_middlename = input("Enter your middle name: ")
-    str = input("Enter your last name: ")
-    user_names_lastname = str
+    user_names_lastname = input("Enter your last name: ")
     str = input("Enter your maiden name: ")
     user_names_maidenname = str    
-    str = input("Enter your nickname: ")
-    user_names_nickname = str
-    str = input("Enter your age: ")
-    user_time_age = str
-    str = input("Enter the day of your birth (No. format): ")
-    user_time_dateofbirth_day = str
-    str = input("Enter the month of your birth (ABC format): ")
-    user_time_dateofbirth_month = str
-    str = input("Enter the year of your birth (No. format): ")
-    user_time_dateofbirth_year = str
+    user_names_nickname = input("Enter your nickname: ")
+    user_time_ager = input("Enter your age: ")
+    user_time_dateofbirth_day = input("Enter the day of your birth (No. format): ")
+    user_time_dateofbirth_monthr = input("Enter the month of your birth (ABC format): ")
+    user_time_dateofbirth_yearr = input("Enter the year of your birth (No. format): ")
     print()
     print("--- Location details ---")
     print()
