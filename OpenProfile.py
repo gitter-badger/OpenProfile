@@ -212,10 +212,8 @@ def begin():
     print()
     print("--- Personal details ---")
     print()
-    str = input("Enter your first name: ")
-    user_names_firstname = str
-    str = input("Enter your middle name: ")
-    user_names_middlename = str
+    user_names_firstname = input("Enter your first name: ")
+    user_names_middlename = input("Enter your middle name: ")
     str = input("Enter your last name: ")
     user_names_lastname = str
     str = input("Enter your maiden name: ")
