@@ -232,14 +232,11 @@ def begin():
     user_location_countryr = input("Enter current country: ")
     print()
     print("--- Work ---")
-    str = input("What is your current job: ")
-    user_work_currentjob = str
-    str = input("List your previous jobs (Comma format): ")
-    user_work_previousjobs_list = str
+    user_work_currentjob = input("What is your current job: ")
+    user_work_previousjobs_list = input("List your previous jobs (Comma format): ")
     print("--- Interests & hobbies ---")
     print()
-    str = input("List your interests (Comma format): ")
-    user_interests_list = str
+    user_interests_list = input("List your interests (Comma format): ")
     print()
     print("Just completing some cool things...")
     'If the person is below the age of 13, he is considered a kid/child (thanks mom ;P)'
