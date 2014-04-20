@@ -268,7 +268,7 @@ def begin():
     print()
     print("-------------------------------------------------------")
     print()
-    print("Below is your autobiography that " + app_name + " just generated:")
+    print("Below is your biography that " + app_name + " just generated:")
     print()
     'Put stuff here'
     commandline()
