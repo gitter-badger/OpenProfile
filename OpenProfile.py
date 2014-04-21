@@ -98,7 +98,7 @@ app_changelog_url = "https://deavmi.github.io/OpenProfile/changelog.txt"
 'End of changelog stuff'
 app_info_online_site_url = "http://bit.ly/getopenprofile"
 app_info_online_repository_url = "https://github.com/deavmi/OpenProfile"
-app_info_online_feedback_url = "https//deavmi.github.io/OpenProfile/feedback"
+app_info_online_feedback_url = "mailto:tristankildaire@gmail.comk"
 app_info_online_wiki_url = "https://github.com/deavmi/OpenProfile/wiki"
 app_ui_console_welcomemsg = "Welcome to " + app_name + "!"
 print("Continueing setting application strings... [Done]")
