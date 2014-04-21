@@ -93,6 +93,9 @@ app_license_startupmsg_line2 = "This program comes with ABSOLUTELY NO WARRANTY; 
 app_license_startupmsg_line3 = "This is free software, and you are welcome to redistribute it"
 app_license_startupmsg_line4 = "under certain conditions; type `show c' for details."
 'End licensing stuff'
+'Changelog stuff'
+app_changelog_url = "https://deavmi.github.io/OpenProfile/changelog.txt"
+'End of changelog stuff'
 app_info_online_site_url = "http://bit.ly/getopenprofile"
 app_info_online_repository_url = "https://github.com/deavmi/OpenProfile"
 app_info_online_feedback_url = "https//deavmi.github.io/OpenProfile/feedback"
@@ -178,7 +181,8 @@ def licenses():
     print()
     commandline()
 def changelog():
-    'Must still put stuff here'
+    print()
+    print("View the changelog here: " + app_changelog_url)
     print()
 def help():
     if app_environment_gui_enabled == "true":
