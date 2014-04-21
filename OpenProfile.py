@@ -79,9 +79,9 @@ app_gui_window_main_size = "300x300"
 app_gui_window_about_size = "300x250"
 'End of GUI stuff'
 app_orginization = "DeavmiOSS"
-app_orginization_message = "This is free and open-source software from " + app_orginization + "."
-app_description = app_name + " is a free and open-source easy to use autobiography and biography creator written in Python."
-app_description_part1 = app_name + " is a free and open-source easy to use "
+app_orginization_message = "This is free, gratis and open-source software from " + app_orginization + "."
+app_description = app_name + " is a free, gratis and open-source easy to use autobiography and biography creator written in Python."
+app_description_part1 = app_name + " is a free, gratis and open-source easy to use "
 app_description_part2 = "autobiography and biography creator written in Python."
 'Licensing stuff here'
 app_license_url = "http://gnu.org/licenses/gpl.txt"
@@ -98,7 +98,7 @@ app_changelog_url = "https://deavmi.github.io/OpenProfile/changelog.txt"
 'End of changelog stuff'
 app_info_online_site_url = "http://bit.ly/getopenprofile"
 app_info_online_repository_url = "https://github.com/deavmi/OpenProfile"
-app_info_online_feedback_url = "mailto:tristankildaire@gmail.comk"
+app_info_online_feedback_url = "https//deavmi.github.io/OpenProfile/feedback"
 app_info_online_wiki_url = "https://github.com/deavmi/OpenProfile/wiki"
 app_ui_console_welcomemsg = "Welcome to " + app_name + "!"
 print("Continueing setting application strings... [Done]")
