@@ -85,7 +85,7 @@ app_description_part1 = app_name + " is a free and open-source easy to use "
 app_description_part2 = "autobiography and biography creator written in Python."
 'Licensing stuff here'
 app_license_url = "http://gnu.org/licenses/gpl.txt"
-app_license = "GPLv3"
+app_license = "GPL v3"
 app_license_description = app_name + " is registered under " + app_license + "."
 app_license_year = "2014"
 app_license_startupmsg_line1 = app_name + " Copyright (C) " + app_license_year + " " + app_orginization
