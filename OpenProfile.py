@@ -2,11 +2,12 @@
 'Below we start setting up strings'
 print("Please wait, the application is starting...")
 print("Setting application strings...")
-app_name = "OpenProfile"
-app_name_short = "OP"
-app_version_number = "1.4.2.0"
-app_version_stableness = "pre-beta"
-app_version_complete = app_version_number + " " + app_version_stableness
+class AppInfo:
+	name = "OpenProfile"
+	name_short = "OP"
+	version_number = "1.4.2.0"
+	version_stableness = "pre-beta"
+	version_complete = app_version_number + " " + app_version_stableness
 print("Setting application strings... [Done]")
 '######### Configure your build of OpenProfile #########'
 '######'
