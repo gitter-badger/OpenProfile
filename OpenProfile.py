@@ -8,6 +8,29 @@ class AppInfo:
 	version_number = "1.4.2.0"
 	version_stableness = "pre-beta"
 	version_complete = app_version_number + " " + app_version_stableness
+	orginization = "DeavmiOSS"
+        orginization_message = "This is free, gratis and open-source software from " + app_orginization + "."
+        description = app_name + " is a free, gratis and open-source easy to use autobiography and biography creator written in Python."
+        description_part1 = app.name + " is a free, gratis and open-source easy to use "
+        app_description_part2 = "autobiography and biography creator written in Python."
+        'Licensing stuff here'
+        license_url = "http://gnu.org/licenses/gpl.txt"
+        license = "GPL v3"
+        license_description = app.name + " is registered under " + app_license + "."
+        license_year = "2014"
+        license_startupmsg_line1 = app.name + " Copyright (C) " + app_license_year + " " + app_orginization
+        license_startupmsg_line2 = "This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'."
+        license_startupmsg_line3 = "This is free software, and you are welcome to redistribute it"
+        license_startupmsg_line4 = "under certain conditions; type `show c' for details."
+        'End licensing stuff'
+        'Changelog stuff'
+        changelog_url = "https://deavmi.github.io/OpenProfile/changelog.txt"
+        'End of changelog stuff'
+        info_online_site_url = "http://bit.ly/getopenprofile"
+        info_online_repository_url = "https://github.com/deavmi/OpenProfile"
+        info_online_feedback_url = "https//deavmi.github.io/OpenProfile/feedback"
+        info_online_wiki_url = "https://github.com/deavmi/OpenProfile/wiki"
+        ui_console_welcomemsg = "Welcome to " + app.name + "!"
 print("Setting application strings... [Done]")
 print("Creating onject 1/1...")
 app = AppInfo()
@@ -82,29 +105,6 @@ app_gui_window_about_title = "About " + app.name
 app_gui_window_main_size = "300x300"
 app_gui_window_about_size = "300x250"
 'End of GUI stuff'
-app_orginization = "DeavmiOSS"
-app_orginization_message = "This is free, gratis and open-source software from " + app_orginization + "."
-app_description = app_name + " is a free, gratis and open-source easy to use autobiography and biography creator written in Python."
-app_description_part1 = app.name + " is a free, gratis and open-source easy to use "
-app_description_part2 = "autobiography and biography creator written in Python."
-'Licensing stuff here'
-app_license_url = "http://gnu.org/licenses/gpl.txt"
-app_license = "GPL v3"
-app_license_description = app.name + " is registered under " + app_license + "."
-app_license_year = "2014"
-app_license_startupmsg_line1 = app.name + " Copyright (C) " + app_license_year + " " + app_orginization
-app_license_startupmsg_line2 = "This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'."
-app_license_startupmsg_line3 = "This is free software, and you are welcome to redistribute it"
-app_license_startupmsg_line4 = "under certain conditions; type `show c' for details."
-'End licensing stuff'
-'Changelog stuff'
-app_changelog_url = "https://deavmi.github.io/OpenProfile/changelog.txt"
-'End of changelog stuff'
-app_info_online_site_url = "http://bit.ly/getopenprofile"
-app_info_online_repository_url = "https://github.com/deavmi/OpenProfile"
-app_info_online_feedback_url = "https//deavmi.github.io/OpenProfile/feedback"
-app_info_online_wiki_url = "https://github.com/deavmi/OpenProfile/wiki"
-app_ui_console_welcomemsg = "Welcome to " + app.name + "!"
 print("Continueing setting application strings... [Done]")
 'Getting everything referenced so that we can, "refer"-lol, to them when we need to a.k.a go to them-(the definitions)'
 def exit():
