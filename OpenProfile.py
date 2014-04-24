@@ -31,10 +31,13 @@ class AppInfo:
         info_online_feedback_url = "https//deavmi.github.io/OpenProfile/feedback"
         info_online_wiki_url = "https://github.com/deavmi/OpenProfile/wiki"
         ui_console_welcomemsg = "Welcome to " + app.name + "!"
+class BuildConfig:
+	build_type = "OpenProfile"
 print("Setting application strings... [Done]")
-print("Creating onject 1/1...")
+print("Creating objects...")
 app = AppInfo()
-print("Creating object 1/1... [Done]")
+buildconfig = BuildConfig()
+print("Creating object... [Done]")
 '######### Configure your build of OpenProfile #########'
 '######'
 print(app.name + " build system is running...")
