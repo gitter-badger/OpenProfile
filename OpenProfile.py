@@ -9,6 +9,9 @@ class AppInfo:
 	version_stableness = "pre-beta"
 	version_complete = app_version_number + " " + app_version_stableness
 print("Setting application strings... [Done]")
+print("Creating onject 1/1...")
+app = AppInfo()
+print("Creating object 1/1... [Done]")
 '######### Configure your build of OpenProfile #########'
 '######'
 print(app_name + " build system is running...")
@@ -24,7 +27,7 @@ print(app_name + " build type set to: " + app_environment_build_type)
 '######'
 print("Checking for the selected build type's enviroment...")
 'Below are the different build types, their code is seperated by these "#"'
-'###### OpenProfile ######'
+'###### OpenProfile-system ######'
 if app_environment_build_type == "OpenProfile":
     print("Checking for the selected build type's enviroment... [Done]")
     print("Setting up the environemnt for the selected build type...")
@@ -33,7 +36,7 @@ if app_environment_build_type == "OpenProfile":
     print("Setting up the environemnt for the selected build type... [Done]")
 '#################################'
 
-'###### OpenProfile-lite ######'
+'###### OpenProfile-lite-system ######'
 if app_environment_build_type == "OpenProfile-lite":
     print("Checking for the selected build type's enviroment... [Done]")
     print("Setting up the environemnt for the selected build type...")
@@ -42,7 +45,7 @@ if app_environment_build_type == "OpenProfile-lite":
     print("Setting up the environemnt for the selected build type... [Done]")
 '#################################'
 
-'###### OpenProfile-for-iOS ######'
+'###### OpenProfile-for-iOS-system ######'
 if app_environment_build_type == "OpenProfile-for-iOS":
     print("Checking for the selected build type's enviroment... [Done]")
     print("Setting up the environemnt for the selected build type...")
