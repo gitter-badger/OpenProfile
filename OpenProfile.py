@@ -14,8 +14,8 @@ app = AppInfo()
 print("Creating object 1/1... [Done]")
 '######### Configure your build of OpenProfile #########'
 '######'
-print(app_name + " build system is running...")
-print(app_name + " build type is being set...")
+print(app.name + " build system is running...")
+print(app.name + " build type is being set...")
 '!!!!!!!!!!!! These are the only settings (below), so obviously change them if you need to !!!!!!!!!!!!'
 app_environment_build_type = "OpenProfile"
 'Below is for compatibility, because older version of Python want the user to use a captital "T" when importing tkinter.'
@@ -78,21 +78,21 @@ print(app_name + " build system is running... [Done]")
 'Some GUI stuff'
 print("Continueing setting application strings...")
 app_gui_window_main_title = app_name + " v" + app_version_number + " (gui)"
-app_gui_window_about_title = "About " + app_name
+app_gui_window_about_title = "About " + app.name
 app_gui_window_main_size = "300x300"
 app_gui_window_about_size = "300x250"
 'End of GUI stuff'
 app_orginization = "DeavmiOSS"
 app_orginization_message = "This is free, gratis and open-source software from " + app_orginization + "."
 app_description = app_name + " is a free, gratis and open-source easy to use autobiography and biography creator written in Python."
-app_description_part1 = app_name + " is a free, gratis and open-source easy to use "
+app_description_part1 = app.name + " is a free, gratis and open-source easy to use "
 app_description_part2 = "autobiography and biography creator written in Python."
 'Licensing stuff here'
 app_license_url = "http://gnu.org/licenses/gpl.txt"
 app_license = "GPL v3"
-app_license_description = app_name + " is registered under " + app_license + "."
+app_license_description = app.name + " is registered under " + app_license + "."
 app_license_year = "2014"
-app_license_startupmsg_line1 = app_name + " Copyright (C) " + app_license_year + " " + app_orginization
+app_license_startupmsg_line1 = app.name + " Copyright (C) " + app_license_year + " " + app_orginization
 app_license_startupmsg_line2 = "This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'."
 app_license_startupmsg_line3 = "This is free software, and you are welcome to redistribute it"
 app_license_startupmsg_line4 = "under certain conditions; type `show c' for details."
@@ -104,7 +104,7 @@ app_info_online_site_url = "http://bit.ly/getopenprofile"
 app_info_online_repository_url = "https://github.com/deavmi/OpenProfile"
 app_info_online_feedback_url = "https//deavmi.github.io/OpenProfile/feedback"
 app_info_online_wiki_url = "https://github.com/deavmi/OpenProfile/wiki"
-app_ui_console_welcomemsg = "Welcome to " + app_name + "!"
+app_ui_console_welcomemsg = "Welcome to " + app.name + "!"
 print("Continueing setting application strings... [Done]")
 'Getting everything referenced so that we can, "refer"-lol, to them when we need to a.k.a go to them-(the definitions)'
 def exit():
