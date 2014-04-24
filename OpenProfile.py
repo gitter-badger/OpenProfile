@@ -109,12 +109,12 @@ print("Continueing setting application strings... [Done]")
 'Getting everything referenced so that we can, "refer"-lol, to them when we need to a.k.a go to them-(the definitions)'
 def exit():
     print()
-    print("Thank you for using " + app_name + ".")
+    print("Thank you for using " + app.name + ".")
     exit
 def about():
     print()
     print("-------------------------------------------------------")
-    print("                      " + app_name)
+    print("                      " + app.name)
     print("                   v" + app_version_complete)
     print()
     print(app_description_part1)
@@ -135,7 +135,7 @@ def about():
     commandline()
 def credits():
     print()
-    print("Credits of " + app_name + " v" + app_version_number + " .")
+    print("Credits of " + app.name + " v" + app.version_number + " .")
     print()
     print()
     'I wanted three back slahes but apprently you always have to add +1 to the amount of slahes any way two slahes is enough'
@@ -176,9 +176,9 @@ def license():
     commandline()
 def licenses():
     print()
-    print("Below are the links to the licenses for all the things used in " + app_name + ":")
+    print("Below are the links to the licenses for all the things used in " + app.name + ":")
     print()
-    print("To view " + app_name + "'s license type 'show c'.")
+    print("To view " + app.name + "'s license type 'show c'.")
     print()
     print("Python Programming Language - <http://docs.python.org/3/license.html> (PSF LICENSE AGREEMENT)")
     print("20 Flat Icons - <http://www.graphicsfuel.com> (Free for commercial use)")
@@ -196,7 +196,7 @@ def help():
         app_strings_about_gui_help_string = "about_gui     Displays about info in GUI mode (Not available in this build type)"
         app_strings_gui_help_string = "gui           Starts OpenProfile in GUI mode (Not available in this build type)"
     print()
-    print("Here are a list of commands that can be used in " + app_name_short + ".")
+    print("Here are a list of commands that can be used in " + app.name_short + ".")
     print()
     print("about         Displays about info")
     print(app_strings_about_gui_help_string)
@@ -205,12 +205,12 @@ def help():
     print("exit          Terminates the program")
     print(app_strings_gui_help_string)
     print("help          Displays list of commands")
-    print("license       Displays the " + app_name + " license")
+    print("license       Displays the " + app.name + " license")
     print("licenses      Displays all licenses")
     print("q             Universally used for quitting")
-    print("restart       Restarts " + app_name)
-    print("show c        Displays the " + app_name + " license")
-    print("show w        Displays the " + app_name + " license")
+    print("restart       Restarts " + app.name)
+    print("show c        Displays the " + app.name + " license")
+    print("show w        Displays the " + app.name + " license")
     print("start         Starts OpenProfile opperation")
     print()
     commandline()
@@ -270,13 +270,13 @@ def begin():
         user_time_age_type = "adult"
     'Not finished with all the Inputs and Outputs yet hay :P :D'
     print()
-    print("Below is your autobiography that " + app_name + " just generated:")
+    print("Below is your autobiography that " + app.name + " just generated:")
     print()
     'Put stuff here'
     print()
     print("-------------------------------------------------------")
     print()
-    print("Below is your biography that " + app_name + " just generated:")
+    print("Below is your biography that " +  app.name + " just generated:")
     print()
     'Put stuff here'
     commandline()
