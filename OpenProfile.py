@@ -8,7 +8,7 @@ class AppInfo:
     version_number = "1.4.2.0"
     version_stableness = "pre-beta"
     version_complete = version_number + " " + version_stableness
-    rginization = "DeavmiOSS"
+    orginization = "DeavmiOSS"
     orginization_message = "This is free, gratis and open-source software from " + orginization + "."
     description = name + " is a free, gratis and open-source easy to use autobiography and biography creator written in Python."
     description_part1 = name + " is a free, gratis and open-source easy to use "
