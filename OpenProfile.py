@@ -9,35 +9,35 @@ class AppInfo:
 	version_stableness = "pre-beta"
 	version_complete = app_version_number + " " + app_version_stableness
 	orginization = "DeavmiOSS"
-        orginization_message = "This is free, gratis and open-source software from " + app_orginization + "."
-        description = app_name + " is a free, gratis and open-source easy to use autobiography and biography creator written in Python."
-        description_part1 = app.name + " is a free, gratis and open-source easy to use "
-        app_description_part2 = "autobiography and biography creator written in Python."
-        'Licensing stuff here'
-        license_url = "http://gnu.org/licenses/gpl.txt"
-        license = "GPL v3"
-        license_description = app.name + " is registered under " + app_license + "."
-        license_year = "2014"
-        license_startupmsg_line1 = app.name + " Copyright (C) " + app_license_year + " " + app_orginization
-        license_startupmsg_line2 = "This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'."
-        license_startupmsg_line3 = "This is free software, and you are welcome to redistribute it"
-        license_startupmsg_line4 = "under certain conditions; type `show c' for details."
-        'End licensing stuff'
-        'Changelog stuff'
-        changelog_url = "https://deavmi.github.io/OpenProfile/changelog.txt"
-        'End of changelog stuff'
-        info_online_site_url = "http://bit.ly/getopenprofile"
-        info_online_repository_url = "https://github.com/deavmi/OpenProfile"
-        info_online_feedback_url = "https//deavmi.github.io/OpenProfile/feedback"
-        info_online_wiki_url = "https://github.com/deavmi/OpenProfile/wiki"
-        ui_console_welcomemsg = "Welcome to " + app.name + "!"
+    orginization_message = "This is free, gratis and open-source software from " + app_orginization + "."
+    description = app_name + " is a free, gratis and open-source easy to use autobiography and biography creator written in Python."
+    description_part1 = app.name + " is a free, gratis and open-source easy to use "
+    app_description_part2 = "autobiography and biography creator written in Python."
+    'Licensing stuff here'
+    license_url = "http://gnu.org/licenses/gpl.txt"
+    license = "GPL v3"
+    license_description = app.name + " is registered under " + app_license + "."
+    license_year = "2014"
+    license_startupmsg_line1 = app.name + " Copyright (C) " + app_license_year + " " + app_orginization
+    license_startupmsg_line2 = "This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'."
+    license_startupmsg_line3 = "This is free software, and you are welcome to redistribute it"
+    license_startupmsg_line4 = "under certain conditions; type `show c' for details."
+    'End licensing stuff'
+    'Changelog stuff'
+    changelog_url = "https://deavmi.github.io/OpenProfile/changelog.txt"
+    'End of changelog stuff'
+    info_online_site_url = "http://bit.ly/getopenprofile"
+    info_online_repository_url = "https://github.com/deavmi/OpenProfile"
+    info_online_feedback_url = "https//deavmi.github.io/OpenProfile/feedback"
+    info_online_wiki_url = "https://github.com/deavmi/OpenProfile/wiki"
+    ui_console_welcomemsg = "Welcome to " + app.name + "!"
 class BuildConfig:
 	build_type = "OpenProfile"
 print("Setting application strings... [Done]")
 print("Creating objects...")
 app = AppInfo()
 buildconfig = BuildConfig()
-print("Creating object... [Done]")
+print("Creating objects... [Done]")
 '######### Configure your build of OpenProfile #########'
 '######'
 print(app.name + " build system is running...")
@@ -118,14 +118,14 @@ def about():
     print()
     print("-------------------------------------------------------")
     print("                      " + app.name)
-    print("                   v" + app_version_complete)
+    print("                   v" + app.version_complete)
     print()
-    print(app_description_part1)
-    print(app_description_part2)
+    print(app.description_part1)
+    print(app.description_part2)
     print()
-    print(app_license_description)
+    print(app.license_description)
     print()
-    print(app_orginization_message)
+    print(app.orginization_message)
     print()
     print("Below are some helpful links:")
     print()
@@ -170,11 +170,11 @@ def credits():
     commandline()
 def license():
     print()
-    print(app_license_description)
+    print(app.license_description)
     print()
     print("All information regarding the NO WARRANTY disclamier and the redistribution disclaimer can be found in the license file online.")
     print()
-    print("Your copy of this license can be obtained here: " + app_license_url + " .")
+    print("Your copy of this license can be obtained here: " + app.license_url + " .")
     print()
     commandline()
 def licenses():
@@ -189,7 +189,7 @@ def licenses():
     commandline()
 def changelog():
     print()
-    print("View the changelog here: " + app_changelog_url)
+    print("View the changelog here: " + app.changelog)
     print()
 def help():
     if app_environment_gui_enabled == "true":
@@ -214,7 +214,7 @@ def help():
     print("restart       Restarts " + app.name)
     print("show c        Displays the " + app.name + " license")
     print("show w        Displays the " + app.name + " license")
-    print("start         Starts OpenProfile opperation")
+    print("start         Starts OpenProfile operation")
     print()
     commandline()
 def begin():
@@ -228,9 +228,9 @@ def begin():
     user_names_lastname = input("Enter your last name: ")
     user_names_maidenname = input("Enter your maiden name: ")
     user_names_nickname = input("Enter your nickname: ")
-    user_time_ager = input("Enter your age: ")
+    user_time_age = input("Enter your age: ")
     user_time_dateofbirth_day = input("Enter the day of your birth (No. format): ")
-    user_time_dateofbirth_monthr = input("Enter the month of your birth (ABC format): ")
+    user_time_dateofbirth_month = input("Enter the month of your birth (ABC format): ")
     user_time_dateofbirth_yearr = input("Enter the year of your birth (No. format): ")
     print()
     print("--- Location details ---")
@@ -337,11 +337,11 @@ def gui():
        print("Setting window properties... [Done]")
        print("Setting up widgets...")
        'must finish this stuff here'
-       label1_app_name = tkinter.Label(text=app_name)
-       label2_app_version = tkinter.Label(text=app_version_complete)
+       label1_app_name = tkinter.Label(text=app.name)
+       label2_app_version = tkinter.Label(text=app.version_complete)
        button1_get_started = tkinter.Button(text="Get Started", command=begin)
-       button2_about = tkinter.Button(text="About " + app_name, command=about_gui)
-       button3_quit = tkinter.Button(text="Quit " + app_name, command=exit)
+       button2_about = tkinter.Button(text="About " + app.name, command=about_gui)
+       button3_quit = tkinter.Button(text="Quit " + app.name, command=exit)
        print("Setting up widgets... [Done]")
        print("Packing the widgets...")
        'image must be created and then packed here'
@@ -396,14 +396,14 @@ def commandline():
         commandline()
 def app_start():
     print("-------------------------------------------------------")
-    print(app_name + " v" + app_version_complete + " " + app_environment_build_machine_type)
-    print(app_ui_console_welcomemsg)
+    print(app.name + " v" + app.version_complete + " " + app_environment_build_machine_type)
+    print(app.ui_console_welcomemsg)
     print("-------------------------------------------------------")
     print()
-    print(app_license_startupmsg_line1)
-    print(app_license_startupmsg_line2)
-    print(app_license_startupmsg_line3)
-    print(app_license_startupmsg_line4)
+    print(app.license_startupmsg_line1)
+    print(app.license_startupmsg_line2)
+    print(app.license_startupmsg_line3)
+    print(app.license_startupmsg_line4)
     print()
     print("Type 'start' to begin or 'help' for a list of commands.")
     print()
