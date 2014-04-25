@@ -7,30 +7,30 @@ class AppInfo:
 	name_short = "OP"
 	version_number = "1.4.2.0"
 	version_stableness = "pre-beta"
-	version_complete = app_version_number + " " + app_version_stableness
+	version_complete = version_number + " " + version_stableness
 	orginization = "DeavmiOSS"
-        orginization_message = "This is free, gratis and open-source software from " + app_orginization + "."
-        description = app_name + " is a free, gratis and open-source easy to use autobiography and biography creator written in Python."
-        description_part1 = app.name + " is a free, gratis and open-source easy to use "
-        app_description_part2 = "autobiography and biography creator written in Python."
-        'Licensing stuff here'
-        license_url = "http://gnu.org/licenses/gpl.txt"
-        license = "GPL v3"
-        license_description = app.name + " is registered under " + app_license + "."
-        license_year = "2014"
-        license_startupmsg_line1 = app.name + " Copyright (C) " + license_year + " " + arginization
-        license_startupmsg_line2 = "This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'."
-        license_startupmsg_line3 = "This is free software, and you are welcome to redistribute it"
-        license_startupmsg_line4 = "under certain conditions; type `show c' for details."
-        'End licensing stuff'
-        'Changelog stuff'
-        changelog_url = "https://deavmi.github.io/OpenProfile/changelog.txt"
-        'End of changelog stuff'
-        info_online_site_url = "http://bit.ly/getopenprofile"
-        info_online_repository_url = "https://github.com/deavmi/OpenProfile"
-        info_online_feedback_url = "https//deavmi.github.io/OpenProfile/feedback"
-        info_online_wiki_url = "https://github.com/deavmi/OpenProfile/wiki"
-        ui_console_welcomemsg = "Welcome to " + app.name + "!"
+    orginization_message = "This is free, gratis and open-source software from " + orginization + "."
+    description = name + " is a free, gratis and open-source easy to use autobiography and biography creator written in Python."
+    description_part1 = name + " is a free, gratis and open-source easy to use "
+    app_description_part2 = "autobiography and biography creator written in Python."
+    'Licensing stuff here'
+    license_url = "http://gnu.org/licenses/gpl.txt"
+    license = "GPL v3"
+    license_description = name + " is registered under " + license + "."
+    license_year = "2014"
+    license_startupmsg_line1 = name + " Copyright (C) " + license_year + " " + orginization
+    license_startupmsg_line2 = "This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'."
+    license_startupmsg_line3 = "This is free software, and you are welcome to redistribute it"
+    license_startupmsg_line4 = "under certain conditions; type `show c' for details."
+    'End licensing stuff'
+    'Changelog stuff'
+    changelog_url = "https://deavmi.github.io/OpenProfile/changelog.txt"
+    'End of changelog stuff'
+    site = "http://bit.ly/getopenprofile"
+    repository = "https://github.com/deavmi/OpenProfile"
+    feedback = "https//deavmi.github.io/OpenProfile/feedback"
+    wiki = "https://github.com/deavmi/OpenProfile/wiki"
+    ui_console_welcomemsg = "Welcome to " + name + "!"
 class BuildConfig:
 	build_type = "OpenProfile"
 print("Setting application strings... [Done]")
@@ -49,7 +49,7 @@ app_environment_build_tkinter_import_mode = "modern"
 'Change this to "true" to enable logs inside the OpenProfile console.'
 app_environment_log2console_enabled = "true"
 'Change this to "true" to make OpenProfile start in GUI mode.'
-print(app_name + " build type set to: " + app_environment_build_type)
+print(app.name + " build type set to: " + app_environment_build_type)
 '######'
 print("Checking for the selected build type's enviroment...")
 'Below are the different build types, their code is seperated by these "#"'
@@ -99,16 +99,8 @@ if app_environment_gui_enabled == "true":
         print("Importing GUI library...")
         import Tkinter
         print("Importing GUI library... [Done]")
-print(app_name + " build system is running... [Done]")    
-'######### End of next stage awesome stuff #########'    
-'Some GUI stuff'
-print("Continueing setting application strings...")
-app_gui_window_main_title = app_name + " v" + app_version_number + " (gui)"
-app_gui_window_about_title = "About " + app.name
-app_gui_window_main_size = "300x300"
-app_gui_window_about_size = "300x250"
-'End of GUI stuff'
-print("Continueing setting application strings... [Done]")
+print(app.name + " build system is running... [Done]")
+'######### End of next stage awesome stuff #########'
 'Getting everything referenced so that we can, "refer"-lol, to them when we need to a.k.a go to them-(the definitions)'
 def exit():
     print()
@@ -118,7 +110,7 @@ def about():
     print()
     print("-------------------------------------------------------")
     print("                      " + app.name)
-    print("                   v" + app_.ersion_complete)
+    print("                   v" + app.version_complete)
     print()
     print(app.description_part1)
     print(app.description_part2)
@@ -132,8 +124,8 @@ def about():
     print("License: " + app.license_url)
     print("Project site: " + app.site)
     print("Wiki: " + app.wiki)
-    print("Source code: " + app_info_online_repository_url)
-    print("Feedback: " + app_info_online_feedback_url)
+    print("Source code: " + app.repository)
+    print("Feedback: " + app/feedback)
     print()
     commandline()
 def credits():
@@ -189,7 +181,7 @@ def licenses():
     commandline()
 def changelog():
     print()
-    print("View the changelog here: " + app_changelog_url)
+    print("View the changelog here: " + app.changelog_url)
     print()
 def help():
     if app_environment_gui_enabled == "true":
@@ -228,10 +220,10 @@ def begin():
     user_names_lastname = input("Enter your last name: ")
     user_names_maidenname = input("Enter your maiden name: ")
     user_names_nickname = input("Enter your nickname: ")
-    user_time_ager = input("Enter your age: ")
+    user_time_age = input("Enter your age: ")
     user_time_dateofbirth_day = input("Enter the day of your birth (No. format): ")
-    user_time_dateofbirth_monthr = input("Enter the month of your birth (ABC format): ")
-    user_time_dateofbirth_yearr = input("Enter the year of your birth (No. format): ")
+    user_time_dateofbirth_month = input("Enter the month of your birth (ABC format): ")
+    user_time_dateofbirth_year = input("Enter the year of your birth (No. format): ")
     print()
     print("--- Location details ---")
     print()
@@ -337,11 +329,11 @@ def gui():
        print("Setting window properties... [Done]")
        print("Setting up widgets...")
        'must finish this stuff here'
-       label1_app_name = tkinter.Label(text=app_name)
-       label2_app_version = tkinter.Label(text=app_version_complete)
+       label1_app_name = tkinter.Label(text=app.name)
+       label2_app_version = tkinter.Label(text=app.version_complete)
        button1_get_started = tkinter.Button(text="Get Started", command=begin)
-       button2_about = tkinter.Button(text="About " + app_name, command=about_gui)
-       button3_quit = tkinter.Button(text="Quit " + app_name, command=exit)
+       button2_about = tkinter.Button(text="About " + app.name, command=about_gui)
+       button3_quit = tkinter.Button(text="Quit " + app.name, command=exit)
        print("Setting up widgets... [Done]")
        print("Packing the widgets...")
        'image must be created and then packed here'
@@ -396,14 +388,14 @@ def commandline():
         commandline()
 def app_start():
     print("-------------------------------------------------------")
-    print(app_name + " v" + app_version_complete + " " + app_environment_build_machine_type)
-    print(app_ui_console_welcomemsg)
+    print(app.name + " v" + app.version_complete + " " + app_environment_build_machine_type)
+    print(app.ui_console_welcomemsg)
     print("-------------------------------------------------------")
     print()
-    print(app_license_startupmsg_line1)
-    print(app_license_startupmsg_line2)
-    print(app_license_startupmsg_line3)
-    print(app_license_startupmsg_line4)
+    print(app.license_startupmsg_line1)
+    print(app.license_startupmsg_line2)
+    print(app.license_startupmsg_line3)
+    print(app.license_startupmsg_line4)
     print()
     print("Type 'start' to begin or 'help' for a list of commands.")
     print()
