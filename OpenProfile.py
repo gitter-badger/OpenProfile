@@ -3,12 +3,12 @@
 print("Please wait, the application is starting...")
 print("Setting application strings...")
 class AppInfo:
-	name = "OpenProfile"
-	name_short = "OP"
-	version_number = "1.4.2.0"
-	version_stableness = "pre-beta"
-	version_complete = version_number + " " + version_stableness
-	orginization = "DeavmiOSS"
+    name = "OpenProfile"
+    name_short = "OP"
+    version_number = "1.4.2.0"
+    version_stableness = "pre-beta"
+    version_complete = version_number + " " + version_stableness
+    rginization = "DeavmiOSS"
     orginization_message = "This is free, gratis and open-source software from " + orginization + "."
     description = name + " is a free, gratis and open-source easy to use autobiography and biography creator written in Python."
     description_part1 = name + " is a free, gratis and open-source easy to use "
@@ -24,7 +24,7 @@ class AppInfo:
     license_startupmsg_line4 = "under certain conditions; type `show c' for details."
     'End licensing stuff'
     'Changelog stuff'
-    changelog_url = "https://deavmi.github.io/OpenProfile/changelog.txt"
+    changelog = "https://deavmi.github.io/OpenProfile/changelog.txt"
     'End of changelog stuff'
     site = "http://bit.ly/getopenprofile"
     repository = "https://github.com/deavmi/OpenProfile"
@@ -125,7 +125,7 @@ def about():
     print("Project site: " + app.site)
     print("Wiki: " + app.wiki)
     print("Source code: " + app.repository)
-    print("Feedback: " + app/feedback)
+    print("Feedback: " + app.feedback)
     print()
     commandline()
 def credits():
@@ -181,7 +181,7 @@ def licenses():
     commandline()
 def changelog():
     print()
-    print("View the changelog here: " + app.changelog_url)
+    print("View the changelog here: " + app.changelog)
     print()
 def help():
     if app_environment_gui_enabled == "true":
