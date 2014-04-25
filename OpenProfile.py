@@ -18,7 +18,7 @@ class AppInfo:
         license = "GPL v3"
         license_description = app.name + " is registered under " + app_license + "."
         license_year = "2014"
-        license_startupmsg_line1 = app.name + " Copyright (C) " + app_license_year + " " + app_orginization
+        license_startupmsg_line1 = app.name + " Copyright (C) " + license_year + " " + arginization
         license_startupmsg_line2 = "This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'."
         license_startupmsg_line3 = "This is free software, and you are welcome to redistribute it"
         license_startupmsg_line4 = "under certain conditions; type `show c' for details."
@@ -118,20 +118,20 @@ def about():
     print()
     print("-------------------------------------------------------")
     print("                      " + app.name)
-    print("                   v" + app_version_complete)
+    print("                   v" + app_.ersion_complete)
     print()
-    print(app_description_part1)
-    print(app_description_part2)
+    print(app.description_part1)
+    print(app.description_part2)
     print()
-    print(app_license_description)
+    print(app.license_description)
     print()
-    print(app_orginization_message)
+    print(app.orginization_message)
     print()
     print("Below are some helpful links:")
     print()
-    print("License: " + app_license_url)
-    print("Project site: " + app_info_online_site_url)
-    print("Wiki: " + app_info_online_wiki_url)
+    print("License: " + app.license_url)
+    print("Project site: " + app.site)
+    print("Wiki: " + app.wiki)
     print("Source code: " + app_info_online_repository_url)
     print("Feedback: " + app_info_online_feedback_url)
     print()
