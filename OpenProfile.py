@@ -28,9 +28,8 @@ class AppInfo:
     'End of changelog stuff'
     site = "http://bit.ly/getopenprofile"
     repository = "https://github.com/deavmi/OpenProfile"
-    feedback = "https//deavmi.github.io/OpenProfile/feedback"
+    feedback = "mailto:tristankildaire@gmail.com"
     wiki = "https://github.com/deavmi/OpenProfile/wiki"
-    ui_console_welcomemsg = "Welcome to " + name + "!"
 class BuildConfig:
     '##### User build preferences to be changed according to your preference #####'
     build_type = "OpenProfile"
@@ -67,11 +66,11 @@ if buildconfig.build_type == "OpenProfile":
 
 '###### OpenProfile-lite-system ######'
 if buildconfig.build_type == "OpenProfile-lite":
-    print("Checking for the selected build type's enviroment... [Done]")
-    print("Setting up the environemnt for the selected build type...")
+    print("Checking for the selected build type's environment... [Done]")
+    print("Setting up the environment for the selected build type...")
     app_environment_build_machine_type = "[Windows/Mac OSX/GNU-Linux (lite)]"
     app_environment_gui_enabled = "false"
-    print("Setting up the environemnt for the selected build type... [Done]")
+    print("Setting up the environment for the selected build type... [Done]")
 '#################################'
 
 '###### OpenProfile-for-iOS-system ######'
@@ -410,7 +409,7 @@ def commandline():
 def app_start():
     print("-------------------------------------------------------")
     print(app.name + " v" + app.version_all + " " + app_environment_build_machine_type)
-    print(app.ui_console_welcomemsg)
+    print("Welcome to " + app.name)
     print("-------------------------------------------------------")
     print()
     print(app.license_startupmsg_line1)
@@ -421,5 +420,5 @@ def app_start():
     print("Type 'start' to begin or 'help' for a list of commands.")
     print()
     commandline()
-'This is continueing from "setting up strings" code, we are now going to jump into the definition called "app_start"'
+'This is continuing from "setting up strings" code, we are now going to jump into the definition called "app_start"'
 app_start()
