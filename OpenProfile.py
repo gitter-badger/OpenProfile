@@ -12,7 +12,7 @@ class AppInfo:
     orginization_message = "This is free, gratis and open-source software from " + orginization + "."
     description = name + " is a free, gratis and open-source easy to use autobiography and biography creator written in Python."
     description_part1 = name + " is a free, gratis and open-source easy to use "
-    app_description_part2 = "autobiography and biography creator written in Python."
+    description_part2 = "autobiography and biography creator written in Python."
     'Licensing stuff here'
     license_url = "http://gnu.org/licenses/gpl.txt"
     license = "GPL v3"
@@ -34,10 +34,13 @@ class AppInfo:
 class BuildConfig:
     '##### User build preferences to be changed according to your preference #####'
     build_type = "OpenProfile"
+class Misc:
+    generation_option = ""
 print("Setting application strings... [Done]")
 print("Creating objects...")
 app = AppInfo()
 buildconfig = BuildConfig()
+misc = Misc()
 print("Creating object... [Done]")
 '######### Configure your build of OpenProfile #########'
 '######'
@@ -73,11 +76,11 @@ if buildconfig.build_type == "OpenProfile-lite":
 
 '###### OpenProfile-for-iOS-system ######'
 if buildconfig.build_type == "OpenProfile-for-iOS":
-    print("Checking for the selected build type's enviroment... [Done]")
-    print("Setting up the environemnt for the selected build type...")
+    print("Checking for the selected build type's environment... [Done]")
+    print("Setting up the environment for the selected build type...")
     app_environment_build_machine_type = "[iOS]"
     app_environment_gui_enabled = "false"
-    print("Setting up the environemnt for the selected build type... [Done]")
+    print("Setting up the environment for the selected build type... [Done]")
 '#################################'
 
 'End of awesome stuff'
@@ -240,18 +243,6 @@ def begin():
     print("--- Interests & hobbies ---")
     print()
     user_interests_list = input("List your interests (Comma format): ")
-    print()
-    print("1. Autobiography")
-    print("2. Biography")
-    print("3. Both of the above")
-    generation_option  = input("Which would you like to generate: ")
-    if generation_option == "1":
-        autobiography()
-    if generation_option == "2":
-        biography()
-    if generation_option == "3":
-        print("Coming soon!")
-    commandline()
     'If the person is below the age of 13, he is considered a kid/child (thanks mom ;P)'
     if user_time_age < "13":
         user_time_age_type = "kid"
@@ -273,7 +264,21 @@ def begin():
     'For all the ages above 19, the person is considered an adult (thanks mom, ;P, lol, again) P.S I know, grandparents/people are not included'
     if user_time_age > "19":
         user_time_age_type = "adult"
-    'Not finished with all the Inputs and Outputs yet hay :P :D'
+    'Jump to the mode selection definition'
+    mode()
+def mode():
+    print()
+    print("1. Autobiography")
+    print("2. Biography")
+    print("3. Both of the above")
+    misc.generation_option = input("Which would you like to generate (Mode selection): ")
+    if misc.generation_option == "1":
+        autobiography()
+    if misc.generation_option == "2":
+        biography()
+    if misc.generation_option == "3":
+        autobiography()
+    commandline()
 def autobiography():
     print()
     print("-------------------------------------------------------")
@@ -281,6 +286,8 @@ def autobiography():
     print("Below is your autobiography that " + app.name + " just generated:")
     print()
     'Put stuff here'
+    if misc.generation_option == "3":
+        biography()
 def biography():
     print()
     print("-------------------------------------------------------")
@@ -293,7 +300,7 @@ def about_gui():
    if app_environment_gui_enabled == "true":
        print("-------------------------------------------------------")
        print("The gui has been " + app_environment_gui_datword + " for your build type.")
-       print("Build type: " + app_environment_build_type)
+       print("Build type: " + buildconfig.build_type)
        print("Tkinter import mode: " + app_environment_build_tkinter_import_mode)
        print("-------------------------------------------------------")
        print()
@@ -303,10 +310,10 @@ def about_gui():
        print("Setting window names... [Done]")
        print("Setting window properties...")
        print("Setting window size...")
-       about.geometry(app_gui_window_about_size)
+       about.geometry("300x300")
        print("Setting window size... [Done]")
        print("Setting window title...")
-       about.title("About " + app.name + " v" + app.version_all)
+       about.title("About " + app.name)
        print("Setting window title... [Done]")
        print("Setting window properties... [Done]")
        print("Setting up the GUI... [Done]")
@@ -316,7 +323,7 @@ def about_gui():
    if app_environment_gui_enabled == "false":
        print("-------------------------------------------------------")
        print("The gui has been " + app_environment_gui_datword + " for your build type.")
-       print("Build type: " + app_environment_build_type)
+       print("Build type: " + buildconfig.build_type)
        print("Tkinter import mode: " + app_environment_build_tkinter_import_mode)
        print("-------------------------------------------------------")
    print()
@@ -325,7 +332,7 @@ def gui():
     if app_environment_gui_enabled == "true":
        print("-------------------------------------------------------")
        print("The gui has been " + app_environment_gui_datword + " for your build type.")
-       print("Build type: " + app_environment_build_type)
+       print("Build type: " + buildconfig.build_type)
        print("Tkinter import mode: " + app_environment_build_tkinter_import_mode)
        print("-------------------------------------------------------")
        print()
@@ -335,10 +342,10 @@ def gui():
        print("Setting window names... [Done]")
        print("Setting window properties...")
        print("Setting window size...")
-       main.geometry(app_gui_window_main_size)
+       main.geometry("300x300")
        print("Setting window size... [Done]")
        print("Setting window title...")
-       main.title(app.name + " v" + app.version_all)
+       main.title(app.name)
        print("Setting window title... [Done]")
        print("Setting window properties... [Done]")
        print("Setting up widgets...")
@@ -364,41 +371,41 @@ def gui():
     if app_environment_gui_enabled == "false":
        print("-------------------------------------------------------")
        print("The gui has been " + app_environment_gui_datword + " for your build type.")
-       print("Build type: " + app_environment_build_type)
+       print("Build type: " + buildconfig.build_type)
        print("Tkinter import mode: " + app_environment_build_tkinter_import_mode)
        print("-------------------------------------------------------")  
     print()
     commandline()
 def commandline():
-    str = input(">>>")
-    if str == "start":
+    user_input = input(">>>")
+    if user_input == "start":
         'Jump to the "begin" definition'
         begin()
-    if str == "help":
+    if user_input == "help":
         help()
-    if str == "exit":
+    if user_input == "exit":
         exit()
-    if str == "q":
+    if user_input == "q":
         exit()
-    if str == "about":
+    if user_input == "about":
         about()
-    if str == "about_gui":
+    if user_input == "about_gui":
         about_gui()
-    if str == "credits":
+    if user_input == "credits":
         credits()
-    if str == "show w":
+    if user_input == "show w":
         license()
-    if str == "show c":
+    if user_input == "show c":
         license()
-    if str == "license":
+    if user_input == "license":
         license()
-    if str == "licenses":
+    if user_input == "licenses":
         licenses()
-    if str == "restart":
+    if user_input == "restart":
         app_start()
-    if str == "gui":
+    if user_input == "gui":
         gui()
-    if str == "":
+    if user_input == "":
         commandline()
 def app_start():
     print("-------------------------------------------------------")
