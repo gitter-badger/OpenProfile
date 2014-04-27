@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d2000da-ad86-44c9-ad53-884256e24f49" name="Default" comment="">
+    <list default="true" id="3d2000da-ad86-44c9-ad53-884256e24f49" name="Default" comment="Making the following changes:&#10;&#10;*Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;*Ovviously the **Person** class is being implemented.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenProfile.py" afterPath="$PROJECT_DIR$/OpenProfile.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,10 +29,29 @@
       <file leaf-file-name="OpenProfile.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OpenProfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="192" column="20" selection-start="8485" selection-end="8485" vertical-scroll-proportion="0.48115942" vertical-offset="3098" max-vertical-offset="7361">
+            <state line="54" column="34" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.90529245" vertical-offset="593" max-vertical-offset="7531">
               <folding>
-                <marker date="1398593774039" expanded="true" signature="1819:1934" placeholder="..." />
+                <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
+                <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pydevd.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1538" column="0" selection-start="60694" selection-end="60694" vertical-scroll-proportion="0.0" vertical-offset="24799" max-vertical-offset="25160">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_pydev_execfile.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.0" vertical-offset="353" max-vertical-offset="714">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -45,6 +64,11 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Tristan B. Kildaire (Deavmi)" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -106,7 +130,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="full.screen.before.presentation.mode" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -294,12 +318,14 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37537092" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39403453" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39246467" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -307,8 +333,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -316,21 +340,22 @@
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3984375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39246467" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37537092" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32810047" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -342,11 +367,14 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Stuff." />
-    <option name="LAST_COMMIT_MESSAGE" value="Stuff." />
+    <MESSAGE value="Damn me boiy, fast corrections." />
+    <MESSAGE value="Making the following changes:&#10;&#10;*Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;*Ovviously the **Person** class is being implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="Making the following changes:&#10;&#10;*Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;*Ovviously the **Person** class is being implemented." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -356,7 +384,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="410" column="36" selection-start="17943" selection-end="17943" vertical-scroll-proportion="0.0" vertical-offset="13266" max-vertical-offset="14157">
           <folding>
-            <marker date="1398593774039" expanded="true" signature="1819:1934" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -365,7 +394,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="13" selection-start="2107" selection-end="2107" vertical-scroll-proportion="0.0" vertical-offset="995" max-vertical-offset="14157">
           <folding>
-            <marker date="1398593774039" expanded="true" signature="1819:1934" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -374,7 +404,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="46" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.0" vertical-offset="995" max-vertical-offset="14157">
           <folding>
-            <marker date="1398593774039" expanded="true" signature="1819:1934" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -383,7 +414,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="12" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="14190">
           <folding>
-            <marker date="1398593774039" expanded="true" signature="1819:1934" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -392,7 +424,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="242" column="40" selection-start="11276" selection-end="11276" vertical-scroll-proportion="0.0" vertical-offset="7821" max-vertical-offset="14223">
           <folding>
-            <marker date="1398593774039" expanded="true" signature="1819:1934" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -401,7 +434,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="230" column="62" selection-start="10721" selection-end="10721" vertical-scroll-proportion="0.0" vertical-offset="7260" max-vertical-offset="13794">
           <folding>
-            <marker date="1398593774039" expanded="true" signature="1819:1934" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -410,7 +444,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="304" column="23" selection-start="13926" selection-end="13926" vertical-scroll-proportion="0.0" vertical-offset="4867" max-vertical-offset="7055">
           <folding>
-            <marker date="1398593774039" expanded="true" signature="1819:1934" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -419,7 +454,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="8" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="6970">
           <folding>
-            <marker date="1398593774039" expanded="true" signature="1819:1934" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -428,7 +464,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="8" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6970">
           <folding>
-            <marker date="1398593774039" expanded="true" signature="1819:1934" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -437,23 +474,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="131" column="14" selection-start="6391" selection-end="6391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7106">
           <folding>
-            <marker date="1398593774039" expanded="true" signature="1819:1934" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1538" column="0" selection-start="60694" selection-end="60694" vertical-scroll-proportion="0.0" vertical-offset="24799" max-vertical-offset="25160">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.0" vertical-offset="354" max-vertical-offset="714">
+        <state line="36" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.0" vertical-offset="353" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenProfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="20" selection-start="8485" selection-end="8485" vertical-scroll-proportion="0.48115942" vertical-offset="3098" max-vertical-offset="7361">
+        <state line="54" column="34" selection-start="2636" selection-end="2636" vertical-scroll-proportion="0.90529245" vertical-offset="593" max-vertical-offset="7531">
           <folding>
-            <marker date="1398593774039" expanded="true" signature="1819:1934" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
+            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
           </folding>
         </state>
       </provider>

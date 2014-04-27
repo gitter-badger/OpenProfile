@@ -42,11 +42,15 @@ class BuildConfig:
     gui_enabled = ""
 class Misc:
     generation_option = ""
+    generation_complete = ""
+class Person:
+    'Thanks redditors and learnpython.org!'
 print("Setting application strings... [Done]")
 print("Creating objects...")
 app = AppInfo()
 buildconfig = BuildConfig()
 misc = Misc()
+person = Person()
 print("Creating object... [Done]")
 '######### Configure your build of OpenProfile #########'
 '######'
@@ -218,52 +222,53 @@ def begin():
     print()
     print("--- Personal details ---")
     print()
-    user_names_firstname = input("Enter your first name: ")
-    user_names_middlename = input("Enter your middle name: ")
-    user_names_lastname = input("Enter your last name: ")
-    user_names_maidenname = input("Enter your maiden name: ")
-    user_names_nickname = input("Enter your nickname: ")
-    user_time_age = input("Enter your age: ")
-    user_time_dateofbirth_day = input("Enter the day of your birth (No. format): ")
-    user_time_dateofbirth_month = input("Enter the month of your birth (ABC format): ")
-    user_time_dateofbirth_year = input("Enter the year of your birth (No. format): ")
+    person.names_firstname = input("Enter your first name: ")
+    person.names_middlename = input("Enter your middle name: ")
+    person.names_lastname = input("Enter your last name: ")
+    person.names_maidenname = input("Enter your maiden name: ")
+    person.names_nickname = input("Enter your nickname: ")
+    person.time_age = input("Enter your age: ")
+    person.time_dateofbirth_day = input("Enter the day of your birth (No. format): ")
+    person.time_dateofbirth_month = input("Enter the month of your birth (ABC format): ")
+    person.time_dateofbirth_year = input("Enter the year of your birth (No. format): ")
     print()
     print("--- Location details ---")
     print()
-    user_location_cityofbirth = input("Enter city of birth: ")
-    user_location_countryofbirth = input("Enter country of birth: ")
-    user_location_postalcode = input("Enter current postal code: ")
-    user_location_city = input("Enter current city: ")
-    user_locationr = input("Enter current state/province: ")
-    user_location_countryr = input("Enter current country: ")
+    person.location_cityofbirth = input("Enter city of birth: ")
+    person.location_countryofbirth = input("Enter country of birth: ")
+    person.location_postalcode = input("Enter current postal code: ")
+    person.location_city = input("Enter current city: ")
+    person.locationr = input("Enter current state/province: ")
+    person.location_countryr = input("Enter current country: ")
     print()
     print("--- Work ---")
-    user_work_currentjob = input("What is your current job: ")
-    user_work_previousjobs_list = input("List your previous jobs (Comma format): ")
+    person.work_currentjob = input("What is your current job: ")
+    person.work_previousjobs_list = input("List your previous jobs (Comma format): ")
     print("--- Interests & hobbies ---")
     print()
-    user_interests_list = input("List your interests (Comma format): ")
+    person.interests_list = input("List your interests (Comma format): ")
     'If the person is below the age of 13, he is considered a kid/child (thanks mom ;P)'
-    if user_time_age < "13":
-        user_time_age_type = "kid"
+    if person.time_age < "13":
+        person.time_age_type = "kid"
     'For all the ages below consider the person a teenager (thanks mom ;P, again)'
-    if user_time_age == "13":
-        user_time_age_type = "teenager"
-    if user_time_age == "14":
-        user_time_age_type = "teenager"
-    if user_time_age == "15":
-        user_time_age_type = "teenager"
-    if user_time_age == "16":
-        user_time_age_type = "teenager"
-    if user_time_age == "17":
-        user_time_age_type = "teenager"
-    if user_time_age == "18":
-        user_time_age_type = "teenager"
-    if user_time_age == "19":
-        user_time_age_type = "teenager"
+    if person.time_age == "13":
+        person.time_age_type = "teenager"
+    if person.time_age == "14":
+        person.time_age_type = "teenager"
+    if person.time_age == "15":
+        person.time_age_type = "teenager"
+    if person.time_age == "16":
+        person.time_age_type = "teenager"
+    if person.time_age == "17":
+        person.time_age_type = "teenager"
+    if person.time_age == "18":
+        person.time_age_type = "teenager"
+    if person.time_age == "19":
+        person.time_age_type = "teenager"
     'For all the ages above 19, the person is considered an adult (thanks mom, ;P, lol, again) P.S I know, grandparents/people are not included'
-    if user_time_age > "19":
-        user_time_age_type = "adult"
+    if person.time_age > "19":
+        person.time_age_type = "adult"
+    misc.generation_complete == "true"
     'Jump to the mode selection definition'
     mode()
 def mode():
@@ -407,6 +412,11 @@ def commandline():
         gui()
     if user_input == "":
         commandline()
+    if user_input == "generate":
+        if misc.generation_complete = "true":
+            mode()
+        if misc.generation_complete = "false":
+            print("No data collected. Cannot generate.")
 def app_start():
     print("-------------------------------------------------------")
     print(app.name + " v" + app.version_all + " " +  buildconfig.build_machine_type)
