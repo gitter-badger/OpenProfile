@@ -33,6 +33,13 @@ class AppInfo:
 class BuildConfig:
     '##### User build preferences to be changed according to your preference #####'
     build_type = "OpenProfile"
+    'Below is for compatibility, because older version of Python want the user to use a captital "T" when importing tkinter.'
+    build_tkinter_import_mode = "modern"
+    'Change this to "true" to make OpenProfile start in GUI mode.'
+    build_auto_gui = "false"
+    '##### Do not chnage the below #####'
+    build_machine_type = ""
+    gui_enabled = ""
 class Misc:
     generation_option = ""
 print("Setting application strings... [Done]")
@@ -45,12 +52,6 @@ print("Creating object... [Done]")
 '######'
 print(app.name + " build system is running...")
 print(app.name + " build type is being set...")
-'!!!!!!!!!!!! These are the only settings (below), so obviously change them if you need to !!!!!!!!!!!!'
-'Below is for compatibility, because older version of Python want the user to use a captital "T" when importing tkinter.'
-app_environment_build_tkinter_import_mode = "modern"
-'Change this to "true" to enable logs inside the OpenProfile console.'
-app_environment_log2console_enabled = "true"
-'Change this to "true" to make OpenProfile start in GUI mode.'
 print(app.name + " build type set to: " + buildconfig.build_type)
 '######'
 print("Checking for the selected build type's environment...")
@@ -59,8 +60,8 @@ print("Checking for the selected build type's environment...")
 if buildconfig.build_type == "OpenProfile":
     print("Checking for the selected build type's environment... [Done]")
     print("Setting up the environment for the selected build type...")
-    app_environment_build_machine_type = "[Windows/Mac OSX/GNU-Linux]"
-    app_environment_gui_enabled = "true"
+    buildconfig.build_machine_type = "[Windows/Mac OSX/GNU-Linux]"
+    buildconfig.gui_enabled = "true"
     print("Setting up the environment for the selected build type... [Done]")
 '#################################'
 
@@ -68,8 +69,8 @@ if buildconfig.build_type == "OpenProfile":
 if buildconfig.build_type == "OpenProfile-lite":
     print("Checking for the selected build type's environment... [Done]")
     print("Setting up the environment for the selected build type...")
-    app_environment_build_machine_type = "[Windows/Mac OSX/GNU-Linux (lite)]"
-    app_environment_gui_enabled = "false"
+    buildconfig.build_machine_type = "[Windows/Mac OSX/GNU-Linux (lite)]"
+    buildconfig._gui_enabled = "false"
     print("Setting up the environment for the selected build type... [Done]")
 '#################################'
 
@@ -77,26 +78,26 @@ if buildconfig.build_type == "OpenProfile-lite":
 if buildconfig.build_type == "OpenProfile-for-iOS":
     print("Checking for the selected build type's environment... [Done]")
     print("Setting up the environment for the selected build type...")
-    app_environment_build_machine_type = "[iOS]"
-    app_environment_gui_enabled = "false"
+    buildconfig.build_machine_type = "[iOS]"
+    buildconfig.gui_enabled = "false"
     print("Setting up the environment for the selected build type... [Done]")
 '#################################'
 
 'End of awesome stuff'
 'Next stage of awesome stuff'
 print("Checking if the GUI needs to be enabled...")
-if app_environment_gui_enabled == "true":
+if  buildconfig.gui_enabled == "true":
     'Sets up dat string'
     app_environment_gui_datword = "enabled"
     'Imports the "tkinter" library"'
     print("Checking if the GUI needs to be enabled... Yes")
     print("Checking the library import mode...")
-    if app_environment_build_tkinter_import_mode == "modern":
+    if  buildconfig.build_tkinter_import_mode == "modern":
         print("Library import mode has been set to: modern")
         print("Importing GUI library...")
         import tkinter
         print("Importing GUI library... [Done]")
-    if app_environment_build_tkinter_import_mode == "old":
+    if  buildconfig.build_tkinter_import_mode == "old":
         print("Library import mode has been set to: old")
         print("Importing GUI library...")
         import Tkinter
@@ -186,10 +187,10 @@ def changelog():
     print("View the changelog here: " + app.changelog)
     print()
 def help():
-    if app_environment_gui_enabled == "true":
+    if  buildconfig.gui_enabled == "true":
         app_strings_about_gui_help_string = "about_gui     Displays about info in GUI mode"
         app_strings_gui_help_string = "gui           Starts OpenProfile in GUI mode"
-    if app_environment_gui_enabled == "false":
+    if  buildconfig.gui_enabled == "false":
         app_strings_about_gui_help_string = "about_gui     Displays about info in GUI mode (Not available in this build type)"
         app_strings_gui_help_string = "gui           Starts OpenProfile in GUI mode (Not available in this build type)"
     print()
@@ -408,7 +409,7 @@ def commandline():
         commandline()
 def app_start():
     print("-------------------------------------------------------")
-    print(app.name + " v" + app.version_all + " " + app_environment_build_machine_type)
+    print(app.name + " v" + app.version_all + " " +  buildconfig.build_machine_type)
     print("Welcome to " + app.name)
     print("-------------------------------------------------------")
     print()
@@ -419,6 +420,9 @@ def app_start():
     print()
     print("Type 'start' to begin or 'help' for a list of commands.")
     print()
+    if buildconfig.build_auto_gui == "true":
+        print("Autostart GUI is enabled, starting the GUI...")
+        gui()
     commandline()
 'This is continuing from "setting up strings" code, we are now going to jump into the definition called "app_start"'
 app_start()
