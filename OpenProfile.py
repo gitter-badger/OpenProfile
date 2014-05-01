@@ -302,7 +302,7 @@ def biography():
     'Put stuff here'
     commandline()
 def about_gui():
-   if app_environment_gui_enabled == "true":
+   if buildconfig.gui_enabled == "true":
        print("-------------------------------------------------------")
        print("The gui has been " + app_environment_gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
@@ -334,7 +334,7 @@ def about_gui():
    print()
    commandline()
 def gui():
-    if app_environment_gui_enabled == "true":
+    if buildconfig.gui_enabled == "true":
        print("-------------------------------------------------------")
        print("The gui has been " + app_environment_gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
@@ -373,7 +373,7 @@ def gui():
        print("Creating the window...")
        main.mainloop()
        print("Creating the window... [Done - Loop ended]")
-    if app_environment_gui_enabled == "false":
+    if buildconfig.gui_enabled == "false":
        print("-------------------------------------------------------")
        print("The gui has been " + app_environment_gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
