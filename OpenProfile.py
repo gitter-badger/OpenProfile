@@ -188,7 +188,7 @@ def licenses():
     commandline()
 def changelog():
     print()
-    print("View the changelog here: " + app.changelog)
+    print("View the changelog here: " + app.changelog + " .")
     print()
 def help():
     if  buildconfig.gui_enabled == "true":
