@@ -75,7 +75,7 @@ if buildconfig.build_type == "OpenProfile-lite":
     print("Checking for the selected build type's environment... [Done]")
     print("Setting up the environment for the selected build type...")
     buildconfig.build_machine_type = "[Windows/Mac OSX/GNU-Linux (lite)]"
-    buildconfig._gui_enabled = "false"
+    buildconfig.gui_enabled = "false"
     print("Setting up the environment for the selected build type... [Done]")
 '#################################'
 
