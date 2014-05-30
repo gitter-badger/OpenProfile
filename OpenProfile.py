@@ -31,10 +31,9 @@ class AppInfo:
     feedback = "mailto:tristankildaire@gmail.com"
     wiki = "https://github.com/deavmi/OpenProfile/wiki"
 class BuildConfig:
-    '##### User build preferences to be changed according to your preference #####'
-    build_type = "OpenProfile"
+    build_type = ""
     'Below is for compatibility, because older version of Python want the user to use a captital "T" when importing tkinter.'
-    build_tkinter_import_mode = "modern"
+    build_tkinter_import_mode = ""
     'Change this to "true" to make OpenProfile start in GUI mode.'
     build_auto_gui = "false"
     '##### Do not chnage the below #####'
@@ -52,11 +51,13 @@ buildconfig = BuildConfig()
 misc = Misc()
 person = Person()
 print("Creating object... [Done]")
-'######### Configure your build of OpenProfile #########'
-'######'
 print(app.name + " build system is running...")
-print(app.name + " build type is being set...")
+print()
+buildconfig.build_type = input("Enter you preferred build type: ")
+print()
 print(app.name + " build type set to: " + buildconfig.build_type)
+'######### Configure your build of OpenProfile #########'
+
 '######'
 print("Checking for the selected build type's environment...")
 'Below are the different build types, their code is seperated by these "#"'
