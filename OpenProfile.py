@@ -350,7 +350,7 @@ def about_gui():
        print("Creating the window...")
        about.mainloop()
        print("Creating the window... [Done - Loop ended]")
-   if app_environment_gui_enabled == "false":
+   if buildconfig.gui_enabled == "false":
        print("-------------------------------------------------------")
        print("The gui has been " + buildconfig.gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
