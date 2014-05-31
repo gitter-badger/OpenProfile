@@ -295,6 +295,7 @@ def autobiography():
     print()
     print("Below is your autobiography that " + app.name + " just generated:")
     print()
+    print("My name is " + person.person.names_firstname + person.names_middlename + person.names_maidenname + person.names_lastname)
     'Put stuff here'
     if misc.generation_option == "4":
         biography()
@@ -315,6 +316,13 @@ def basicinfo():
     print()
     print("Below is your basic info that " + app.name + " just generated:")
     print()
+    print("Basic Info")
+    print()
+    print("Firstname: " + person.names_firstname)
+    print("Middlename: " + person.names_middlename)
+    print("Maidenname: " + person.names_maidenname)
+    print("Lastname: " + person.names_lastname)
+    print("Nickname: " + person.names_nickname)
     'Put stuff here'
     commandline()
 def about_gui():
