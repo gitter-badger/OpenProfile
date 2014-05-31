@@ -278,7 +278,8 @@ def mode():
     print("1. Autobiography")
     print("2. Biography")
     print("3. Basic info")
-    print("4. All of the above")
+    print("4. Contact info")
+    print("5. All of the above")
     misc.generation_option = input("Which would you like to generate (Mode selection): ")
     if misc.generation_option == "1":
         autobiography()
@@ -287,6 +288,8 @@ def mode():
     if misc.generation_option == "3":
         basicinfo()
     if misc.generation_option == "4":
+        contactinfo()
+    if misc.generation_option == "5":
         autobiography()
     commandline()
 def autobiography():
@@ -324,6 +327,15 @@ def basicinfo():
     print("Lastname: " + person.names_lastname)
     print("Nickname: " + person.names_nickname)
     print("Age: " + person.time_age)
+    'Put stuff here'
+    commandline()
+def contactinfo():
+     print()
+    print("-------------------------------------------------------")
+    print()
+    print("Below is your conatct info that " + app.name + " just generated:")
+    print()
+    print("Conatct info:")
     'Put stuff here'
     commandline()
 def about_gui():
