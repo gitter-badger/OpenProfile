@@ -400,7 +400,6 @@ def gui():
 def commandline():
     user_input = input(">>>")
     if user_input == "start":
-        'Jump to the "begin" definition'
         begin()
     if user_input == "help":
         help()
