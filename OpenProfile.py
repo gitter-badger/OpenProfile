@@ -39,6 +39,7 @@ class BuildConfig:
     '##### Do not chnage the below #####'
     build_machine_type = ""
     gui_enabled = ""
+    gui_datword = ""
 class Misc:
     generation_option = ""
     generation_complete = ""
@@ -93,7 +94,7 @@ if buildconfig.build_type == "OpenProfile-for-iOS":
 print("Checking if the GUI needs to be enabled...")
 if  buildconfig.gui_enabled == "true":
     'Sets up dat string'
-    app_environment_gui_datword = "enabled"
+    buildconfig.gui_datword = "enabled"
     'Imports the "tkinter" library"'
     print("Checking if the GUI needs to be enabled... Yes")
     print("Checking the library import mode...")
@@ -319,9 +320,9 @@ def basicinfo():
 def about_gui():
    if buildconfig.gui_enabled == "true":
        print("-------------------------------------------------------")
-       print("The gui has been " + app_environment_gui_datword + " for your build type.")
+       print("The gui has been " + buildconfig.gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
-       print("Tkinter import mode: " + app_environment_build_tkinter_import_mode)
+       print("Tkinter import mode: " + buildconfig.build_tkinter_import_mode)
        print("-------------------------------------------------------")
        print()
        print("Setting up the GUI...")
@@ -342,18 +343,18 @@ def about_gui():
        print("Creating the window... [Done - Loop ended]")
    if app_environment_gui_enabled == "false":
        print("-------------------------------------------------------")
-       print("The gui has been " + app_environment_gui_datword + " for your build type.")
+       print("The gui has been " + buildconfig.gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
-       print("Tkinter import mode: " + app_environment_build_tkinter_import_mode)
+       print("Tkinter import mode: " + buildconfig.build_tkinter_import_mode)
        print("-------------------------------------------------------")
    print()
    commandline()
 def gui():
     if buildconfig.gui_enabled == "true":
        print("-------------------------------------------------------")
-       print("The gui has been " + app_environment_gui_datword + " for your build type.")
+       print("The gui has been " + buildconfig.gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
-       print("Tkinter import mode: " + app_environment_build_tkinter_import_mode)
+       print("Tkinter import mode: " + buildconfig.build_tkinter_import_mode)
        print("-------------------------------------------------------")
        print()
        print("Setting up the GUI...")
@@ -390,9 +391,9 @@ def gui():
        print("Creating the window... [Done - Loop ended]")
     if buildconfig.gui_enabled == "false":
        print("-------------------------------------------------------")
-       print("The gui has been " + app_environment_gui_datword + " for your build type.")
+       print("The gui has been " + buildconfig.gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
-       print("Tkinter import mode: " + app_environment_build_tkinter_import_mode)
+       print("Tkinter import mode: " + buildconfig.build_tkinter_import_mode)
        print("-------------------------------------------------------")  
     print()
     commandline()
