@@ -33,13 +33,13 @@ class AppInfo:
 class BuildConfig:
     build_type = ""
     'Below is for compatibility, because older version of Python want the user to use a captital "T" when importing tkinter.'
-    build_tkinter_import_mode = ""
+    build_tkinter_import_mode = None
     'Change this to "true" to make OpenProfile start in GUI mode.'
     build_auto_gui = "false"
     '##### Do not chnage the below #####'
-    build_machine_type = ""
-    gui_enabled = ""
-    gui_datword = ""
+    build_machine_type = None
+    gui_enabled = None
+    gui_datword = None
 class Misc:
     generation_option = ""
     generation_complete = ""
@@ -330,7 +330,7 @@ def basicinfo():
     'Put stuff here'
     commandline()
 def contactinfo():
-     print()
+    print()
     print("-------------------------------------------------------")
     print()
     print("Below is your conatct info that " + app.name + " just generated:")
