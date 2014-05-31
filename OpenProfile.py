@@ -323,6 +323,7 @@ def basicinfo():
     print("Maidenname: " + person.names_maidenname)
     print("Lastname: " + person.names_lastname)
     print("Nickname: " + person.names_nickname)
+    print("Age: " + person.time_age)
     'Put stuff here'
     commandline()
 def about_gui():
