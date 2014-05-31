@@ -403,7 +403,7 @@ def gui():
        print("The gui has been " + buildconfig.gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
        print("Tkinter import mode: " + buildconfig.build_tkinter_import_mode)
-       print("-------------------------------------------------------")  
+       print("-------------------------------------------------------")
     print()
     commandline()
 def commandline():
