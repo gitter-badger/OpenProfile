@@ -276,13 +276,16 @@ def mode():
     print()
     print("1. Autobiography")
     print("2. Biography")
-    print("3. Both of the above")
+    print("3. Basic info")
+    print("4. All of the above")
     misc.generation_option = input("Which would you like to generate (Mode selection): ")
     if misc.generation_option == "1":
         autobiography()
     if misc.generation_option == "2":
         biography()
     if misc.generation_option == "3":
+        basicinfo()
+    if misc.generation_option == "4":
         autobiography()
     commandline()
 def autobiography():
@@ -292,13 +295,24 @@ def autobiography():
     print("Below is your autobiography that " + app.name + " just generated:")
     print()
     'Put stuff here'
-    if misc.generation_option == "3":
+    if misc.generation_option == "4":
         biography()
+    commandline()
 def biography():
     print()
     print("-------------------------------------------------------")
     print()
     print("Below is your biography that " + app.name + " just generated:")
+    print()
+    'Put stuff here'
+    if misc.generation_option == "4":
+        basicinfo()
+    commandline()
+def basicinfo():
+    print()
+    print("-------------------------------------------------------")
+    print()
+    print("Below is your basic info that " + app.name + " just generated:")
     print()
     'Put stuff here'
     commandline()

@@ -29,30 +29,8 @@
       <file leaf-file-name="OpenProfile.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OpenProfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="11" selection-start="2300" selection-end="2300" vertical-scroll-proportion="0.33704737" vertical-offset="593" max-vertical-offset="7531">
-              <folding>
-                <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
-                <marker date="1398606050517" expanded="true" signature="2300:2327" placeholder="..." />
-                <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
-                <marker date="1398606050517" expanded="true" signature="17156:17893" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pydevd.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1538" column="0" selection-start="60694" selection-end="60694" vertical-scroll-proportion="0.0" vertical-offset="24799" max-vertical-offset="25160">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_pydev_execfile.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.0" vertical-offset="353" max-vertical-offset="714">
+            <state vertical-scroll-proportion="0.3989899" vertical-offset="4642" max-vertical-offset="7786">
+              <caret line="287" column="37" selection-start-line="287" selection-start-column="37" selection-end-line="287" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -100,7 +78,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -119,6 +97,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="OpenProfile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpenProfile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OpenProfile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -286,22 +274,8 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -313,28 +287,44 @@
       <created>1398526977092</created>
       <updated>1398526977092</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Making the following changes:&#10;&#10;* Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;* Obviously the **Person** class is being implemented.&#10;* Bilbo swaggins a.k.a a minor useless text change.">
+      <created>1398952853441</created>
+      <updated>1398952853441</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Making the following changes:&#10;&#10;*Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;*Ovviously the **Person** class is being implemented.">
+      <created>1398953818639</created>
+      <updated>1398953818639</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Making the following changes:&#10;&#10;*Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;*Ovviously the **Person** class is being implemented.&#10;* Penis waht yoyo!">
+      <created>1401481894619</created>
+      <updated>1401481894619</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixed a bug.">
+      <created>1401482336599</created>
+      <updated>1401482336599</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37537092" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39246467" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.392126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32440946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37537092" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -364,6 +354,9 @@
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -375,8 +368,11 @@
     </option>
     <MESSAGE value="Stuff." />
     <MESSAGE value="Damn me boiy, fast corrections." />
+    <MESSAGE value="Making the following changes:&#10;&#10;* Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;* Obviously the **Person** class is being implemented.&#10;* Bilbo swaggins a.k.a a minor useless text change." />
     <MESSAGE value="Making the following changes:&#10;&#10;*Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;*Ovviously the **Person** class is being implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="Making the following changes:&#10;&#10;*Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;*Ovviously the **Person** class is being implemented." />
+    <MESSAGE value="Making the following changes:&#10;&#10;*Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;*Ovviously the **Person** class is being implemented.&#10;* Penis waht yoyo!" />
+    <MESSAGE value="Fixed a bug." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -384,147 +380,150 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/OpenProfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="410" column="36" selection-start="17943" selection-end="17943" vertical-scroll-proportion="0.0" vertical-offset="13266" max-vertical-offset="14157">
-          <folding>
-            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2300:2327" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="17156:17893" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="2397" max-vertical-offset="7548">
+          <caret line="158" column="44" selection-start-line="158" selection-start-column="44" selection-end-line="158" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenProfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="13" selection-start="2107" selection-end="2107" vertical-scroll-proportion="0.0" vertical-offset="995" max-vertical-offset="14157">
-          <folding>
-            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2300:2327" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="17156:17893" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="6307" max-vertical-offset="7531">
+          <caret line="378" column="38" selection-start-line="378" selection-start-column="38" selection-end-line="378" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenProfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="46" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.0" vertical-offset="995" max-vertical-offset="14157">
-          <folding>
-            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2300:2327" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="17156:17893" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="14190">
-          <folding>
-            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2300:2327" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="17156:17893" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="242" column="40" selection-start="11276" selection-end="11276" vertical-scroll-proportion="0.0" vertical-offset="7821" max-vertical-offset="14223">
-          <folding>
-            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2300:2327" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="17156:17893" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="62" selection-start="10721" selection-end="10721" vertical-scroll-proportion="0.0" vertical-offset="7260" max-vertical-offset="13794">
-          <folding>
-            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2300:2327" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="17156:17893" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="304" column="23" selection-start="13926" selection-end="13926" vertical-scroll-proportion="0.0" vertical-offset="4867" max-vertical-offset="7055">
-          <folding>
-            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2300:2327" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="17156:17893" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="6970">
-          <folding>
-            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2300:2327" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="17156:17893" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6970">
-          <folding>
-            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2300:2327" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="17156:17893" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="14" selection-start="6391" selection-end="6391" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7106">
-          <folding>
-            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2300:2327" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="17156:17893" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1538" column="0" selection-start="60694" selection-end="60694" vertical-scroll-proportion="0.0" vertical-offset="24799" max-vertical-offset="25160">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7531">
+          <caret line="374" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.0" vertical-offset="353" max-vertical-offset="714">
+        <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="714">
+          <caret line="36" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7531">
+          <caret line="43" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenProfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="11" selection-start="2300" selection-end="2300" vertical-scroll-proportion="0.33704737" vertical-offset="593" max-vertical-offset="7531">
-          <folding>
-            <marker date="1398606050517" expanded="true" signature="1819:2288" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2300:2327" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="2370:2414" placeholder="..." />
-            <marker date="1398606050517" expanded="true" signature="17156:17893" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="13266" max-vertical-offset="14157">
+          <caret line="410" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="995" max-vertical-offset="14157">
+          <caret line="41" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="995" max-vertical-offset="14157">
+          <caret line="37" column="46" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="14190">
+          <caret line="10" column="12" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7821" max-vertical-offset="14223">
+          <caret line="242" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7260" max-vertical-offset="13794">
+          <caret line="230" column="62" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4867" max-vertical-offset="7055">
+          <caret line="304" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="6970">
+          <caret line="10" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6970">
+          <caret line="10" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7106">
+          <caret line="131" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6703601" vertical-offset="24799" max-vertical-offset="25160">
+          <caret line="1538" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7150838" vertical-offset="373" max-vertical-offset="731">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3989899" vertical-offset="4642" max-vertical-offset="7786">
+          <caret line="287" column="37" selection-start-line="287" selection-start-column="37" selection-end-line="287" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
