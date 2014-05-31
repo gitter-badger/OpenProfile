@@ -429,9 +429,9 @@ def commandline():
     if user_input == "":
         commandline()
     if user_input == "generate":
-        if misc.generation_complete = "true":
+        if misc.generation_complete == "true":
             mode()
-        if misc.generation_complete = "false":
+        if misc.generation_complete == "false":
             print("No data collected. Cannot generate.")
 def app_start():
     print("-------------------------------------------------------")
