@@ -281,6 +281,8 @@ def mode():
     print("3. Basic info")
     print("4. Contact info")
     print("5. All of the above")
+    print()
+    print("For more information visit online 'https://github.com/deavmi/OpenProfile/wiki/Generation-modes'")
     misc.generation_option = input("Which would you like to generate (Mode selection): ")
     if misc.generation_option == "1":
         autobiography()
