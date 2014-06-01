@@ -33,13 +33,13 @@ class AppInfo:
 class BuildConfig:
     build_type = ""
     'Below is for compatibility, because older version of Python want the user to use a captital "T" when importing tkinter.'
-    build_tkinter_import_mode = None
+    build_tkinter_import_mode = ""
     'Change this to "true" to make OpenProfile start in GUI mode.'
     build_auto_gui = "false"
     '##### Do not chnage the below #####'
-    build_machine_type = None
-    gui_enabled = None
-    gui_datword = None
+    build_machine_type = ""
+    gui_enabled = ""
+    gui_datword = ""
 class Misc:
     generation_option = ""
     generation_complete = ""
@@ -284,6 +284,7 @@ def mode():
     print()
     print("For more information visit online 'https://github.com/deavmi/OpenProfile/wiki/Generation-modes'")
     print()
+    misc.generation_complete == "true"
     misc.generation_option = input("Which would you like to generate (Mode selection): ")
     if misc.generation_option == "1":
         autobiography()
@@ -455,7 +456,7 @@ def commandline():
         gui()
     if user_input == "":
         commandline()
-    if user_input == "generate":
+    if user_input == "generate_info":
         if misc.generation_complete == "true":
             mode()
         if misc.generation_complete == "false":
