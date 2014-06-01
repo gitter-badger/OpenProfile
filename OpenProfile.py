@@ -300,6 +300,7 @@ def autobiography():
     print()
     print("My name is " + person.names_firstname + person.names_middlename + person.names_maidenname + person.names_lastname)
     print("but most people call me " + person.names_nickname + ". I am a " + person.time_age + " year old " + person.time_age_type)
+    print("that was born in " + person.location_cityofbirth + ", " + person.location_countryofbirth + " in " +  person.time_dateofbirth_day + "/" +  person.time_dateofbirth_month + "/" +  person.time_dateofbirth_year + ".")
     'Put stuff here'
     if misc.generation_option == "4":
         biography()
