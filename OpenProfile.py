@@ -240,7 +240,7 @@ def begin():
     person.location_countryofbirth = input("Enter country of birth: ")
     person.location_postalcode = input("Enter current postal code: ")
     person.location_city = input("Enter current city: ")
-    person.locationr = input("Enter current state/province: ")
+    person.location_state = input("Enter current state/province: ")
     person.location_country = input("Enter current country: ")
     print()
     print("--- Work ---")
