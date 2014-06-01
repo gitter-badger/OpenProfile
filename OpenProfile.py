@@ -241,7 +241,7 @@ def begin():
     person.location_postalcode = input("Enter current postal code: ")
     person.location_city = input("Enter current city: ")
     person.locationr = input("Enter current state/province: ")
-    person.location_countryr = input("Enter current country: ")
+    person.location_country = input("Enter current country: ")
     print()
     print("--- Work ---")
     person.work_currentjob = input("What is your current job: ")
