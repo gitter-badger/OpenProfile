@@ -237,6 +237,7 @@ def begin():
     print("--- Location details ---")
     print()
     person.location_cityofbirth = input("Enter city of birth: ")
+    person.location_stateofbirth = input("Enter state/province of birth: ")
     person.location_countryofbirth = input("Enter country of birth: ")
     person.location_postalcode = input("Enter current postal code: ")
     person.location_city = input("Enter current city: ")
@@ -300,7 +301,8 @@ def autobiography():
     print()
     print("My name is " + person.names_firstname + person.names_middlename + person.names_maidenname + person.names_lastname)
     print("but most people call me " + person.names_nickname + ". I am a " + person.time_age + " year old " + person.time_age_type)
-    print("that was born in " + person.location_cityofbirth + ", " + person.location_countryofbirth + " in " +  person.time_dateofbirth_day + "/" +  person.time_dateofbirth_month + "/" +  person.time_dateofbirth_year + ".")
+    print("that was born in " + person.location_cityofbirth + ", " + person.location_stateofbirth + ", " + person.location_countryofbirth + " in " +  person.time_dateofbirth_day + "/" +  person.time_dateofbirth_month + "/" +  person.time_dateofbirth_year + ".")
+    print("I currently live in " + person.location_city + ", " + person.location_state + ", " + person.location_country)
     'Put stuff here'
     if misc.generation_option == "4":
         biography()
