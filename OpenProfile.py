@@ -299,7 +299,7 @@ def autobiography():
     print("Below is your autobiography that " + app.name + " just generated:")
     print()
     print("My name is " + person.person.names_firstname + person.names_middlename + person.names_maidenname + person.names_lastname)
-    print("but most people call me " + person.names_nickname)
+    print("but most people call me " + person.names_nickname + ".")
     'Put stuff here'
     if misc.generation_option == "4":
         biography()
