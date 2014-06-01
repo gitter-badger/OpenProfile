@@ -219,6 +219,8 @@ def help():
     print("show w        Displays the " + app.name + " license")
     print("start         Starts OpenProfile operation")
     print()
+    print("For more information visit online 'https://github.com/deavmi/OpenProfile/wiki/Commands'")
+    print()
     commandline()
 def begin():
     print()
