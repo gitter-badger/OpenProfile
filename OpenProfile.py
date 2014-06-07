@@ -43,6 +43,8 @@ class BuildConfig:
 class Misc:
     generation_option = ""
     generation_complete = ""
+    gui_about_string = ""
+    gui_help_string = ""
 class Person:
     'Thanks redditors and learnpython.org!'
 print("Setting application strings... [Done]")
@@ -196,20 +198,20 @@ def changelog():
     print()
 def help():
     if  buildconfig.gui_enabled == "true":
-        app_strings_about_gui_help_string = "about_gui     Displays about info in GUI mode"
-        app_strings_gui_help_string = "gui           Starts OpenProfile in GUI mode"
+        misc.gui_about_string = "about_gui     Displays about info in GUI mode"
+        misc.gui_help_string = "gui           Starts OpenProfile in GUI mode"
     if  buildconfig.gui_enabled == "false":
-        app_strings_about_gui_help_string = "about_gui     Displays about info in GUI mode (Not available in this build type)"
-        app_strings_gui_help_string = "gui           Starts OpenProfile in GUI mode (Not available in this build type)"
+        misc.gui_about_string = "about_gui     Displays about info in GUI mode (Not available in this build type)"
+        misc.gui_help_string = "gui           Starts OpenProfile in GUI mode (Not available in this build type)"
     print()
     print("Here are a list of commands that can be used in " + app.name_short + ".")
     print()
     print("about         Displays about info")
-    print(app_strings_about_gui_help_string)
+    print(misc.gui_about_string)
     print("changelog     Displays info on how to get the changelog")
     print("credits       Displays credits")
     print("exit          Terminates the program")
-    print(app_strings_gui_help_string)
+    print(misc.gui_help_string)
     print("help          Displays list of commands")
     print("license       Displays the " + app.name + " license")
     print("licenses      Displays all licenses")

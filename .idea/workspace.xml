@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d2000da-ad86-44c9-ad53-884256e24f49" name="Default" comment="Making the following changes:&#10;&#10;*Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;*Ovviously the **Person** class is being implemented.">
+    <list default="true" id="3d2000da-ad86-44c9-ad53-884256e24f49" name="Default" comment="Adding more sentences.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenProfile.py" afterPath="$PROJECT_DIR$/OpenProfile.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,8 +29,8 @@
       <file leaf-file-name="OpenProfile.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OpenProfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3989899" vertical-offset="4642" max-vertical-offset="7786">
-              <caret line="287" column="37" selection-start-line="287" selection-start-column="37" selection-end-line="287" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.6195286" vertical-offset="516" max-vertical-offset="8381">
+              <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -90,7 +90,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -111,6 +110,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,7 +303,95 @@
       <created>1401482336599</created>
       <updated>1401482336599</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implementing new features to OpenProfile.">
+      <created>1401529071997</created>
+      <updated>1401529071997</updated>
+    </task>
+    <task id="LOCAL-00007" summary="More stuffs and ya. Bug fixes too I think.">
+      <created>1401542888835</created>
+      <updated>1401542888835</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Bug fixes.">
+      <created>1401548627623</created>
+      <updated>1401548627623</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Removed a comment.">
+      <created>1401548801646</created>
+      <updated>1401548801646</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Adding some more stuff.">
+      <created>1401564048763</created>
+      <updated>1401564048763</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Adding some more stuff.">
+      <created>1401564380131</created>
+      <updated>1401564380131</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Bug fixes.">
+      <created>1401565366764</created>
+      <updated>1401565366764</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Bug fixes.">
+      <created>1401565656354</created>
+      <updated>1401565656354</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Implementing new features.">
+      <created>1401565881652</created>
+      <updated>1401565881652</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Code improvements.">
+      <created>1401569390775</created>
+      <updated>1401569390775</updated>
+    </task>
+    <task id="LOCAL-00016" summary="COntinueing work on the autobiography generator.">
+      <created>1401601796020</created>
+      <updated>1401601796020</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Full stop.">
+      <created>1401601922275</created>
+      <updated>1401601922275</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Bug fix.">
+      <created>1401618553131</created>
+      <updated>1401618553131</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Some more sentences.">
+      <created>1401638369621</created>
+      <updated>1401638369621</updated>
+    </task>
+    <task id="LOCAL-00020" summary="String name fix.">
+      <created>1401638596214</created>
+      <updated>1401638596214</updated>
+    </task>
+    <task id="LOCAL-00021" summary="String related fixes.">
+      <created>1401638670734</created>
+      <updated>1401638670734</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Adding more sentences.">
+      <created>1401638881964</created>
+      <updated>1401638881964</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Adding help everywhere. Links such as for &quot;mode()&quot; e.g = https://github.com/deavmi/OpenProfile/wiki/Generation-modes">
+      <created>1401639169291</created>
+      <updated>1401639169291</updated>
+    </task>
+    <task id="LOCAL-00024" summary="COnsole interface minor improvemnet.">
+      <created>1401639350647</created>
+      <updated>1401639350647</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Un-retardededised Deavmi's/my code.">
+      <created>1401639719460</created>
+      <updated>1401639719460</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added a online help reference.">
+      <created>1401651523688</created>
+      <updated>1401651523688</updated>
+    </task>
+    <task id="LOCAL-00027" summary="More online help referencing.">
+      <created>1401652221643</created>
+      <updated>1401652221643</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -317,14 +405,14 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.392126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32440946" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37537092" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37480316" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -345,9 +433,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -366,18 +454,153 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Stuff." />
     <MESSAGE value="Damn me boiy, fast corrections." />
     <MESSAGE value="Making the following changes:&#10;&#10;* Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;* Obviously the **Person** class is being implemented.&#10;* Bilbo swaggins a.k.a a minor useless text change." />
     <MESSAGE value="Making the following changes:&#10;&#10;*Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;*Ovviously the **Person** class is being implemented." />
     <MESSAGE value="Making the following changes:&#10;&#10;*Changing variables to be variables or the new class we are incorporating, the **Person** class.&#10;*Ovviously the **Person** class is being implemented.&#10;* Penis waht yoyo!" />
     <MESSAGE value="Fixed a bug." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug." />
+    <MESSAGE value="Implementing new features to OpenProfile." />
+    <MESSAGE value="More stuffs and ya. Bug fixes too I think." />
+    <MESSAGE value="Removed a comment." />
+    <MESSAGE value="Adding some more stuff." />
+    <MESSAGE value="Bug fixes." />
+    <MESSAGE value="Implementing new features." />
+    <MESSAGE value="Code improvements." />
+    <MESSAGE value="COntinueing work on the autobiography generator." />
+    <MESSAGE value="Full stop." />
+    <MESSAGE value="Bug fix." />
+    <MESSAGE value="Some more sentences." />
+    <MESSAGE value="String name fix." />
+    <MESSAGE value="String related fixes." />
+    <MESSAGE value="More awesomeness." />
+    <MESSAGE value="Adding more sentences." />
+    <MESSAGE value="Adding help everywhere. Links such as for &quot;mode()&quot; e.g = https://github.com/deavmi/OpenProfile/wiki/Generation-modes" />
+    <MESSAGE value="COnsole interface minor improvemnet." />
+    <MESSAGE value="Un-retardededised Deavmi's/my code." />
+    <MESSAGE value="Added a online help reference." />
+    <MESSAGE value="More online help referencing." />
+    <option name="LAST_COMMIT_MESSAGE" value="More online help referencing." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2041" max-vertical-offset="8347">
+          <caret line="237" column="33" selection-start-line="237" selection-start-column="33" selection-end-line="237" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="624" max-vertical-offset="8313">
+          <caret line="56" column="35" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2086" max-vertical-offset="8279">
+          <caret line="470" column="29" selection-start-line="470" selection-start-column="29" selection-end-line="470" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7566" max-vertical-offset="8160">
+          <caret line="474" column="11" selection-start-line="474" selection-start-column="11" selection-end-line="474" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4777" max-vertical-offset="8160">
+          <caret line="307" column="11" selection-start-line="307" selection-start-column="11" selection-end-line="307" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="731">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4641" max-vertical-offset="8143">
+          <caret line="286" column="19" selection-start-line="286" selection-start-column="19" selection-end-line="286" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="731">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="8143">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="731">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5172" max-vertical-offset="7939">
+          <caret line="322" column="45" selection-start-line="322" selection-start-column="45" selection-end-line="322" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3285" max-vertical-offset="7803">
+          <caret line="217" column="35" selection-start-line="217" selection-start-column="35" selection-end-line="217" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7209" max-vertical-offset="7803">
+          <caret line="453" column="11" selection-start-line="453" selection-start-column="11" selection-end-line="453" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenProfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7786">
+          <caret line="300" column="16" selection-start-line="300" selection-start-column="16" selection-end-line="300" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="731">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OpenProfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2397" max-vertical-offset="7548">
@@ -513,16 +736,15 @@
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7150838" vertical-offset="373" max-vertical-offset="731">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenProfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3989899" vertical-offset="4642" max-vertical-offset="7786">
-          <caret line="287" column="37" selection-start-line="287" selection-start-column="37" selection-end-line="287" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.6195286" vertical-offset="516" max-vertical-offset="8381">
+          <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
           <folding />
         </state>
       </provider>
