@@ -46,7 +46,7 @@ class Misc:
     gui_about_string = ""
     gui_help_string = ""
 class Person:
-    'Thanks redditors and learnpython.org!'
+    'Thanks to redditors and people at learnpython.org!'
 print("Setting application strings... [Done]")
 print("Creating objects...")
 app = AppInfo()
