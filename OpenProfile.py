@@ -200,7 +200,7 @@ def help():
     if  buildconfig.gui_enabled == "true":
         misc.gui_about_string = "about_gui     Displays about info in GUI mode"
         misc.gui_help_string = "gui           Starts OpenProfile in GUI mode"
-    if  buildconfig.gui_enabled == "false":
+    else:
         misc.gui_about_string = "about_gui     Displays about info in GUI mode (Not available in this build type)"
         misc.gui_help_string = "gui           Starts OpenProfile in GUI mode (Not available in this build type)"
     print()
@@ -294,14 +294,17 @@ def mode():
     misc.generation_option = input("Which would you like to generate (Mode selection): ")
     if misc.generation_option == "1":
         autobiography()
-    if misc.generation_option == "2":
+    elif misc.generation_option == "2":
         biography()
-    if misc.generation_option == "3":
+    elif misc.generation_option == "3":
         basicinfo()
-    if misc.generation_option == "4":
+    elif misc.generation_option == "4":
         contactinfo()
-    if misc.generation_option == "5":
+    elif misc.generation_option == "5":
         autobiography()
+    else:
+        print("Invalid generation option selected!")
+        mode()
     commandline()
 def autobiography():
     print()
@@ -376,7 +379,7 @@ def about_gui():
        print("Creating the window...")
        about.mainloop()
        print("Creating the window... [Done - Loop ended]")
-   if buildconfig.gui_enabled == "false":
+   else:
        print("-------------------------------------------------------")
        print("The gui has been " + buildconfig.gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
@@ -424,7 +427,7 @@ def gui():
        print("Creating the window...")
        main.mainloop()
        print("Creating the window... [Done - Loop ended]")
-    if buildconfig.gui_enabled == "false":
+    else:
        print("-------------------------------------------------------")
        print("The gui has been " + buildconfig.gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
@@ -436,37 +439,39 @@ def commandline():
     user_input = input(">>>")
     if user_input == "start":
         begin()
-    if user_input == "help":
+    elif user_input == "help":
         help()
-    if user_input == "exit":
+    elif user_input == "exit":
         exit()
-    if user_input == "q":
+    elif user_input == "q":
         exit()
-    if user_input == "about":
+    elif user_input == "about":
         about()
-    if user_input == "about_gui":
+    elif user_input == "about_gui":
         about_gui()
-    if user_input == "credits":
+    elif user_input == "credits":
         credits()
-    if user_input == "show w":
+    elif user_input == "show w":
         license()
-    if user_input == "show c":
+    elif user_input == "show c":
         license()
-    if user_input == "license":
+    elif user_input == "license":
         license()
-    if user_input == "licenses":
+    elif user_input == "licenses":
         licenses()
-    if user_input == "restart":
+    elif user_input == "restart":
         app_start()
-    if user_input == "gui":
+    elif user_input == "gui":
         gui()
-    if user_input == "":
+    elif user_input == "":
         commandline()
-    if user_input == "generate_info":
+    elif user_input == "generate_info":
         if misc.generation_complete == "true":
             mode()
         if misc.generation_complete == "false":
             print("No data collected. Cannot generate.")
+    else:
+        print("Invalid command '" + user_input + "'")
 def app_start():
     print("-------------------------------------------------------")
     print(app.name + " v" + app.version_all + " " +  buildconfig.build_machine_type)
