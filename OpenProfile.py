@@ -471,7 +471,7 @@ def commandline():
         if misc.generation_complete == "false":
             print("No data collected. Cannot generate.")
     else:
-        print("Invalid command '" + user_input + "'")
+        print("Unknown command '" + user_input + "'")
 def app_start():
     print("-------------------------------------------------------")
     print(app.name + " v" + app.version_all + " " +  buildconfig.build_machine_type)
