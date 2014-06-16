@@ -18,8 +18,3 @@ To see a list of commands that can be used in the OpenProfile command-line and a
 
 * [**OpenProfile for Windows/Mac OSX/GNU-Linux** _master_](https://github.com/deavmi/OpenProfile/tree/master)
 * [**OpenProfile-lite**](https://github.com/deavmi/OpenProfile/tree/OpenProfile-for-iOS)
-
-### OpenProfile launchers:
-
-* [**OpenProfile First stage/Primary launcher** _for Windows_ **(Recommended download)**](https://github.com/deavmi/OP-first-stage-launcher_windows)
-* [**OpenProfile Second stage/Secondary launcher** _for Windows_](https://github.com/deavmi/OP-second-stage-launcher_windows)
