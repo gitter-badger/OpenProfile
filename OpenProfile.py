@@ -60,11 +60,13 @@ print("For more information visit online 'https://github.com/deavmi/OpenProfile/
 print()
 buildconfig.build_type = input("Enter you preferred build type: ")
 if buildconfig.build_type == "OpenProfile":
-
-elif: buildconfig.build_type == "OpenProfile-lite"
-
-else:
-print("Invalid build type selected: '" + buildconfig.build_type + "'")
+    'Do nothing'
+    pass
+    elif: buildconfig.build_type == "OpenProfile-lite"
+    'Do nothing'
+    pass
+    else:
+    print("Invalid build type selected: '" + buildconfig.build_type + "'")
 print()
 print(app.name + " build type set to: " + buildconfig.build_type)
 '######### Configure your build of OpenProfile #########'
