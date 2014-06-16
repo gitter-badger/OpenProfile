@@ -65,8 +65,16 @@ elif buildconfig.build_type == "OpenProfile-lite":
     'Do nothing'
 else:
     print("Invalid build type selected: '" + buildconfig.build_type + "'")
+buildconfig.build_tkinter_import_mode = input("Tkinter library import mode: ")
+if buildconfig.build_type == "modern":
+    'Do nothing'
+elif buildconfig.build_type == "old":
+    'Do nothing'
+else:
+    print("Invalid import mode selected: '" + buildconfig.build_tkinter_import_mode + "'")
 print()
-print(app.name + " build type set to: " + buildconfig.build_type)
+print(app.name + " build type set to: '" + buildconfig.build_type + "'")
+print(app.name + " Tkinter library import mode set to: '" + buildconfig.build_tkinter_import_mode + "'")
 '######### Configure your build of OpenProfile #########'
 
 '######'
