@@ -61,10 +61,8 @@ print()
 buildconfig.build_type = input("Enter you preferred build type: ")
 if buildconfig.build_type == "OpenProfile":
     'Do nothing'
-    pass
-    elif: buildconfig.build_type == "OpenProfile-lite"
+    elif buildconfig.build_type == "OpenProfile-lite"
     'Do nothing'
-    pass
     else:
     print("Invalid build type selected: '" + buildconfig.build_type + "'")
 print()
