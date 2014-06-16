@@ -61,9 +61,9 @@ print()
 buildconfig.build_type = input("Enter you preferred build type: ")
 if buildconfig.build_type == "OpenProfile":
     'Do nothing'
-    elif buildconfig.build_type == "OpenProfile-lite"
+elif buildconfig.build_type == "OpenProfile-lite":
     'Do nothing'
-    else:
+else:
     print("Invalid build type selected: '" + buildconfig.build_type + "'")
 print()
 print(app.name + " build type set to: " + buildconfig.build_type)
@@ -469,7 +469,7 @@ def commandline():
             print("No data collected. Cannot generate.")
     else:
         print("Unknown command '" + user_input + "'")
-	commandline()
+        commandline()
 def app_start():
     print("-------------------------------------------------------")
     print(app.name + " v" + app.version_all + " " +  buildconfig.build_machine_type)
