@@ -59,6 +59,12 @@ print()
 print("For more information visit online 'https://github.com/deavmi/OpenProfile/wiki/Different-builds-of-OpenProfile'")
 print()
 buildconfig.build_type = input("Enter you preferred build type: ")
+if buildconfig.build_type == "OpenProfile":
+
+elif: buildconfig.build_type == "OpenProfile-lite"
+
+else:
+print("Invalid build type selected: '" + buildconfig.build_type + "'")
 print()
 print(app.name + " build type set to: " + buildconfig.build_type)
 '######### Configure your build of OpenProfile #########'
@@ -80,15 +86,6 @@ if buildconfig.build_type == "OpenProfile-lite":
     print("Checking for the selected build type's environment... [Done]")
     print("Setting up the environment for the selected build type...")
     buildconfig.build_machine_type = "[Windows/Mac OSX/GNU-Linux (lite)]"
-    buildconfig.gui_enabled = "false"
-    print("Setting up the environment for the selected build type... [Done]")
-'#################################'
-
-'###### OpenProfile-for-iOS-system ######'
-if buildconfig.build_type == "OpenProfile-for-iOS":
-    print("Checking for the selected build type's environment... [Done]")
-    print("Setting up the environment for the selected build type...")
-    buildconfig.build_machine_type = "[iOS]"
     buildconfig.gui_enabled = "false"
     print("Setting up the environment for the selected build type... [Done]")
 '#################################'
@@ -472,6 +469,7 @@ def commandline():
             print("No data collected. Cannot generate.")
     else:
         print("Unknown command '" + user_input + "'")
+	commandline()
 def app_start():
     print("-------------------------------------------------------")
     print(app.name + " v" + app.version_all + " " +  buildconfig.build_machine_type)
