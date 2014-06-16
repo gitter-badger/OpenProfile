@@ -333,7 +333,7 @@ def biography():
     print()
     'Put stuff here'
     if misc.generation_option == "4":
-        basicinfo()
+	basicinfo()
     commandline()
 def basicinfo():
     print()
@@ -350,6 +350,8 @@ def basicinfo():
     print("Nickname: " + person.names_nickname)
     print("Age: " + person.time_age)
     'Put stuff here'
+    if misc.generation_option == "4":
+    	contactinfo()
     commandline()
 def contactinfo():
     print()
