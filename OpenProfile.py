@@ -65,8 +65,21 @@ elif buildconfig.build_type == "OpenProfile-lite":
     'Do nothing'
 else:
     print("Invalid build type selected: '" + buildconfig.build_type + "'")
+buildconfig.build_tkinter_import_mode = input("Tkinter library import mode: ")
+if buildconfig.build_type == "modern":
+    'Do nothing'
+elif buildconfig.build_type == "old":
+    'Do nothing'
+else:
+    print("Invalid import mode selected: '" + buildconfig.build_tkinter_import_mode + "'")
 print()
+<<<<<<< HEAD
 print(app.name + " build type set to: " + buildconfig.build_type)
+=======
+print(app.name + " build type set to: '" + buildconfig.build_type + "'")
+print(app.name + " Tkinter library import mode set to: '" + buildconfig.build_tkinter_import_mode + "'")
+'######### Configure your build of OpenProfile #########'
+>>>>>>> 186177ec4389f26da38e07e5ec36ea972bd5040e
 
 '######'
 print("Checking for the selected build type's environment...")
@@ -324,7 +337,7 @@ def biography():
     print()
     'Put stuff here'
     if misc.generation_option == "4":
-        basicinfo()
+	basicinfo()
     commandline()
 def basicinfo():
     print()
@@ -341,6 +354,8 @@ def basicinfo():
     print("Nickname: " + person.names_nickname)
     print("Age: " + person.time_age)
     'Put stuff here'
+    if misc.generation_option == "4":
+    	contactinfo()
     commandline()
 def contactinfo():
     print()
@@ -360,17 +375,9 @@ def about_gui():
        print("-------------------------------------------------------")
        print()
        print("Setting up the GUI...")
-       print("Setting window name...")
        about = tkinter.Tk()
-       print("Setting window names... [Done]")
-       print("Setting window properties...")
-       print("Setting window size...")
        about.geometry("300x300")
-       print("Setting window size... [Done]")
-       print("Setting window title...")
        about.title("About " + app.name)
-       print("Setting window title... [Done]")
-       print("Setting window properties... [Done]")
        print("Setting up the GUI... [Done]")
        print("Creating the window...")
        about.mainloop()
@@ -392,33 +399,21 @@ def gui():
        print("-------------------------------------------------------")
        print()
        print("Setting up the GUI...")
-       print("Setting window name...")
        main = tkinter.Tk()
-       print("Setting window names... [Done]")
-       print("Setting window properties...")
-       print("Setting window size...")
        main.geometry("300x300")
-       print("Setting window size... [Done]")
-       print("Setting window title...")
        main.title(app.name)
-       print("Setting window title... [Done]")
-       print("Setting window properties... [Done]")
-       print("Setting up widgets...")
        'must finish this stuff here'
        label1_app_name = tkinter.Label(text=app.name)
        label2_app_version = tkinter.Label(text=app.version_all)
        button1_get_started = tkinter.Button(text="Get Started", command=begin)
        button2_about = tkinter.Button(text="About " + app.name, command=about_gui)
        button3_quit = tkinter.Button(text="Quit " + app.name, command=exit)
-       print("Setting up widgets... [Done]")
-       print("Packing the widgets...")
        'image must be created and then packed here'
        label1_app_name.pack()
        label2_app_version.pack()
        button1_get_started.pack()
        button2_about.pack()
        button3_quit.pack()
-       print("Packing the widgets... [Done]")
        print("Setting up the GUI... [Done]")
        print("Creating the window...")
        main.mainloop()
