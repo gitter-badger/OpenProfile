@@ -67,7 +67,6 @@ else:
     print("Invalid build type selected: '" + buildconfig.build_type + "'")
 print()
 print(app.name + " build type set to: " + buildconfig.build_type)
-'######### Configure your build of OpenProfile #########'
 
 '######'
 print("Checking for the selected build type's environment...")
