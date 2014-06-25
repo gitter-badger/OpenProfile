@@ -16,9 +16,8 @@ class AppInfo:
     'Licensing stuff here'
     license_url = "http://gnu.org/licenses/gpl.txt"
     license = "GPL v3"
-    license_description = name + " is registered under " + license + "."
+    license_description = name + " is registered under the " + license + " license."
     license_year = "2014"
-    license_startupmsg_line1 = name + " Copyright (C) " + license_year + " " + orginization
     license_startupmsg_line2 = "This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'."
     license_startupmsg_line3 = "This is free software, and you are welcome to redistribute it"
     license_startupmsg_line4 = "under certain conditions; type `show c' for details."
@@ -466,7 +465,6 @@ def app_start():
     print("Welcome to " + app.name)
     print("-------------------------------------------------------")
     print()
-    print(app.license_startupmsg_line1)
     print(app.license_startupmsg_line2)
     print(app.license_startupmsg_line3)
     print(app.license_startupmsg_line4)
