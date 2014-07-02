@@ -16,8 +16,9 @@ class AppInfo:
     'Licensing stuff here'
     license_url = "http://gnu.org/licenses/gpl.txt"
     license = "GPL v3"
-    license_description = name + " is registered under the " + license + " license."
+    license_description = name + " is registered under " + license + "."
     license_year = "2014"
+    license_startupmsg_line1 = name + " Copyright (C) " + license_year + " " + orginization
     license_startupmsg_line2 = "This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'."
     license_startupmsg_line3 = "This is free software, and you are welcome to redistribute it"
     license_startupmsg_line4 = "under certain conditions; type `show c' for details."
@@ -319,7 +320,7 @@ def autobiography():
     print("My name is " + person.names_firstname + person.names_middlename + person.names_maidenname + person.names_lastname)
     print("but most people call me " + person.names_nickname + ". I am a " + person.time_age + " year old " + person.time_age_type)
     print("that was born in " + person.location_cityofbirth + ", " + person.location_stateofbirth + ", " + person.location_countryofbirth + " in " +  person.time_dateofbirth_day + "/" +  person.time_dateofbirth_month + "/" +  person.time_dateofbirth_year + ".")
-    print("I currently live in " + person.location_city + ", " + person.location_state + ", " + person.location_country)
+    print("I currently live in " + person.location_city + ", " + person.location_state + ", " + person.location_country + ". My postal code is " + person.location_postalcode + ".")
     'Put stuff here'
     if misc.generation_option == "4":
         biography()
@@ -465,6 +466,7 @@ def app_start():
     print("Welcome to " + app.name)
     print("-------------------------------------------------------")
     print()
+    print(app.license_startupmsg_line1)
     print(app.license_startupmsg_line2)
     print(app.license_startupmsg_line3)
     print(app.license_startupmsg_line4)
