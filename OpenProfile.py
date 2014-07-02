@@ -28,7 +28,7 @@ class AppInfo:
     'End of changelog stuff'
     site = "http://bit.ly/getopenprofile"
     repository = "https://github.com/deavmi/OpenProfile"
-    feedback = "mailto:tristankildaire@gmail.com"
+    feedback = "https://github.com/deavmi/OpenProfile/issues/new"
     wiki = "https://github.com/deavmi/OpenProfile/wiki"
 class BuildConfig:
     build_type = ""
