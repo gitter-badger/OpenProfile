@@ -14,7 +14,7 @@ class AppInfo:
     description_part2 = "autobiography and biography creator written in Python."
     'Licensing stuff here'
     license_url = "https://gnu.org/licenses/gpl.txt"
-    license = "GPL v3"
+    license = "GPL v3 or above."
     license_description = name + " is licensed under " + license + "."
     license_year = "2014"
     license_startupmsg_line1 = name + " Copyright (C) " + license_year + " " + orginization
@@ -35,7 +35,6 @@ class BuildConfig:
     build_tkinter_import_mode = ""
     'Change this to "true" to make OpenProfile start in GUI mode.'
     build_auto_gui = "false"
-    '##### Do not chnage the below #####'
     build_machine_type = ""
     gui_enabled = ""
     gui_datword = ""
