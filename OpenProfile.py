@@ -1,7 +1,6 @@
 'OpenProfile is a free and open-source easy to use autobiography and biography creator written in Python. Copyright (C) 2014 DeavmiOSS'
 'Below we start setting up strings'
 print("Please wait, the application is starting...")
-print("Setting application strings...")
 class AppInfo:
     name = "OpenProfile"
     name_short = "OP"
@@ -47,17 +46,14 @@ class Misc:
     gui_help_string = ""
 class Person:
     'Thanks to redditors and people at learnpython.org!'
-print("Setting application strings... [Done]")
-print("Creating objects...")
 app = AppInfo()
 buildconfig = BuildConfig()
 misc = Misc()
 person = Person()
-print("Creating object... [Done]")
 print(app.name + " build system is running...")
-print()
+print("")
 print("For more information visit online 'https://github.com/deavmi/OpenProfile/wiki/Different-builds-of-OpenProfile'")
-print()
+print("")
 buildconfig.build_type = input("Enter you preferred build type: ")
 if buildconfig.build_type == "OpenProfile":
     'Do nothing'
@@ -72,7 +68,7 @@ elif buildconfig.build_type == "old":
     'Do nothing'
 else:
     print("Invalid import mode selected: '" + buildconfig.build_tkinter_import_mode + "'")
-print()
+print("")
 print(app.name + " build type set to: '" + buildconfig.build_type + "'")
 print(app.name + " Tkinter library import mode set to: '" + buildconfig.build_tkinter_import_mode + "'")
 '######### Configure your build of OpenProfile #########'
