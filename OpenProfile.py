@@ -43,6 +43,7 @@ class Misc:
     generation_complete = ""
     gui_about_string = ""
     gui_help_string = ""
+    cli_line = "-------------------------------------------------------"
 class Person:
     'Thanks to redditors and people at learnpython.org!'
 app = AppInfo()
@@ -118,10 +119,9 @@ print(app.name + " build system is running... [Done]")
 def exit():
     print()
     print("Thank you for using " + app.name + ".")
-    exit
 def about():
     print("")
-    print("-------------------------------------------------------")
+    print(misc.cli_line)
     print("                      " + app.name)
     print("                   v" + app.version_all)
     print("")
@@ -260,22 +260,22 @@ def begin():
     if person.time_age < "13":
         person.time_age_type = "kid"
     'For all the ages below consider the person a teenager (thanks mom ;P, again)'
-    if person.time_age == "13":
+    elif person.time_age == "13":
         person.time_age_type = "teenager"
-    if person.time_age == "14":
+    elif person.time_age == "14":
         person.time_age_type = "teenager"
-    if person.time_age == "15":
+    elif person.time_age == "15":
         person.time_age_type = "teenager"
-    if person.time_age == "16":
+    elif person.time_age == "16":
         person.time_age_type = "teenager"
-    if person.time_age == "17":
+    elif person.time_age == "17":
         person.time_age_type = "teenager"
-    if person.time_age == "18":
+    elif person.time_age == "18":
         person.time_age_type = "teenager"
-    if person.time_age == "19":
+    elif person.time_age == "19":
         person.time_age_type = "teenager"
     'For all the ages above 19, the person is considered an adult (thanks mom, ;P, lol, again) P.S I know, grandparents/people are not included'
-    if person.time_age > "19":
+    elif person.time_age > "19":
         person.time_age_type = "adult"
     misc.generation_complete == "true"
     'Jump to the mode selection definition'
@@ -308,7 +308,7 @@ def mode():
     commandline()
 def autobiography():
     print("")
-    print("-------------------------------------------------------")
+    print(misc.cli_line)
     print("")
     print("Below is your autobiography that " + app.name + " just generated:")
     print("")
@@ -322,7 +322,7 @@ def autobiography():
     commandline()
 def biography():
     print("")
-    print("-------------------------------------------------------")
+    print(misc.cli_line)
     print("")
     print("Below is your biography that " + app.name + " just generated:")
     print("")
@@ -332,7 +332,7 @@ def biography():
     commandline()
 def basicinfo():
     print("")
-    print("-------------------------------------------------------")
+    print(misc.cli_line)
     print()
     print("Below is your basic info that " + app.name + " just generated:")
     print("")
@@ -344,13 +344,15 @@ def basicinfo():
     print("Lastname: " + person.names_lastname)
     print("Nickname: " + person.names_nickname)
     print("Age: " + person.time_age)
+    print("Date of birth: " +  person.time_dateofbirth_day + "/" +  person.time_dateofbirth_month + "/" +  person.time_dateofbirth_year)
+    print("Current location: " + person.location_city + ", " + person.location_state + ", " + person.location_country)
     'Put stuff here'
     if misc.generation_option == "4":
     	contactinfo()
     commandline()
 def contactinfo():
     print("")
-    print("-------------------------------------------------------")
+    print(misc.cli_line)
     print("")
     print("Below is your conatct info that " + app.name + " just generated:")
     print("")
@@ -359,11 +361,11 @@ def contactinfo():
     commandline()
 def about_gui():
    if buildconfig.gui_enabled == "true":
-       print("-------------------------------------------------------")
+       print(misc.cli_line)
        print("The gui has been " + buildconfig.gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
        print("Tkinter import mode: " + buildconfig.build_tkinter_import_mode)
-       print("-------------------------------------------------------")
+       print(misc.cli_line)
        print("")
        print("Setting up the GUI...")
        about = tkinter.Tk()
@@ -374,20 +376,20 @@ def about_gui():
        about.mainloop()
        print("Creating the window... [Done - Loop ended]")
    else:
-       print("-------------------------------------------------------")
+       print(misc.cli_line)
        print("The gui has been " + buildconfig.gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
        print("Tkinter import mode: " + buildconfig.build_tkinter_import_mode)
-       print("-------------------------------------------------------")
+       print(misc.cli_line)
    print("")
    commandline()
 def gui():
     if buildconfig.gui_enabled == "true":
-       print("-------------------------------------------------------")
+       print(misc.cli_line)
        print("The gui has been " + buildconfig.gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
        print("Tkinter import mode: " + buildconfig.build_tkinter_import_mode)
-       print("-------------------------------------------------------")
+       print(misc.cli_line)
        print("")
        print("Setting up the GUI...")
        main = tkinter.Tk()
@@ -410,11 +412,11 @@ def gui():
        main.mainloop()
        print("Creating the window... [Done - Loop ended]")
     else:
-       print("-------------------------------------------------------")
+       print(misc.cli_line)
        print("The gui has been " + buildconfig.gui_datword + " for your build type.")
        print("Build type: " + buildconfig.build_type)
        print("Tkinter import mode: " + buildconfig.build_tkinter_import_mode)
-       print("-------------------------------------------------------")
+       print(misc.cli_line)
     print("")
     commandline()
 def commandline():
@@ -450,16 +452,16 @@ def commandline():
     elif user_input == "generate_info":
         if misc.generation_complete == "true":
             mode()
-        if misc.generation_complete == "false":
+        else:
             print("No data collected. Cannot generate.")
     else:
         print("Unknown command '" + user_input + "'")
         commandline()
 def app_start():
-    print("-------------------------------------------------------")
+    print(misc.cli_line)
     print(app.name + " v" + app.version_all + " " +  buildconfig.build_machine_type)
     print("Welcome to " + app.name)
-    print("-------------------------------------------------------")
+    print(misc.cli_line)
     print("")
     print(app.license_startupmsg_line1)
     print(app.license_startupmsg_line2)
