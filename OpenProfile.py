@@ -1,6 +1,6 @@
 'OpenProfile is a free and open-source easy to use autobiography and biography creator written in Python. Copyright (C) 2014 DeavmiOSS'
 'Below we start setting up strings'
-print("Please wait, the application is starting...")
+print("[Startup] Please wait, the application is starting...")
 class AppInfo:
     name = "OpenProfile"
     name_short = "OP"
@@ -49,7 +49,7 @@ app = AppInfo()
 buildconfig = BuildConfig()
 misc = Misc()
 person = Person()
-print(app.name + " build system is running...")
+print("[Startup] " + app.name + " build system is running...")
 print("")
 print("For more information visit online 'https://github.com/deavmi/OpenProfile/wiki/Different-builds-of-OpenProfile'")
 print("")
