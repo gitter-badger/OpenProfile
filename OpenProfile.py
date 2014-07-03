@@ -13,9 +13,9 @@ class AppInfo:
     description_part1 = name + " is a free, gratis and open-source easy to use "
     description_part2 = "autobiography and biography creator written in Python."
     'Licensing stuff here'
-    license_url = "http://gnu.org/licenses/gpl.txt"
+    license_url = "https://gnu.org/licenses/gpl.txt"
     license = "GPL v3"
-    license_description = name + " is registered under " + license + "."
+    license_description = name + " is licensed under " + license + "."
     license_year = "2014"
     license_startupmsg_line1 = name + " Copyright (C) " + license_year + " " + orginization
     license_startupmsg_line2 = "This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'."
