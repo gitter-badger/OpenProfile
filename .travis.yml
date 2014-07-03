@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-language: python
-python:
-  - "3.3"
-  - "3.2"
-  - "2.7"
-  - "2.6"
-# command to run tests
-script: nosetests
-=======
 language: python
 python:
   - "3.3"
@@ -18,4 +8,3 @@ python:
 script: nosetests
 notifications:
   slack: deavmioss:nIhMcHgye6VjBZ3nfwyfTqey
->>>>>>> 186177ec4389f26da38e07e5ec36ea972bd5040e

@@ -28,7 +28,7 @@ class AppInfo:
     'End of changelog stuff'
     site = "http://bit.ly/getopenprofile"
     repository = "https://github.com/deavmi/OpenProfile"
-    feedback = "mailto:tristankildaire@gmail.com"
+    feedback = "https://github.com/deavmi/OpenProfile/issues/new"
     wiki = "https://github.com/deavmi/OpenProfile/wiki"
 class BuildConfig:
     build_type = ""
@@ -73,13 +73,9 @@ elif buildconfig.build_type == "old":
 else:
     print("Invalid import mode selected: '" + buildconfig.build_tkinter_import_mode + "'")
 print()
-<<<<<<< HEAD
-print(app.name + " build type set to: " + buildconfig.build_type)
-=======
 print(app.name + " build type set to: '" + buildconfig.build_type + "'")
 print(app.name + " Tkinter library import mode set to: '" + buildconfig.build_tkinter_import_mode + "'")
 '######### Configure your build of OpenProfile #########'
->>>>>>> 186177ec4389f26da38e07e5ec36ea972bd5040e
 
 '######'
 print("Checking for the selected build type's environment...")
@@ -324,7 +320,7 @@ def autobiography():
     print("My name is " + person.names_firstname + person.names_middlename + person.names_maidenname + person.names_lastname)
     print("but most people call me " + person.names_nickname + ". I am a " + person.time_age + " year old " + person.time_age_type)
     print("that was born in " + person.location_cityofbirth + ", " + person.location_stateofbirth + ", " + person.location_countryofbirth + " in " +  person.time_dateofbirth_day + "/" +  person.time_dateofbirth_month + "/" +  person.time_dateofbirth_year + ".")
-    print("I currently live in " + person.location_city + ", " + person.location_state + ", " + person.location_country)
+    print("I currently live in " + person.location_city + ", " + person.location_state + ", " + person.location_country + ".")
     'Put stuff here'
     if misc.generation_option == "4":
         biography()
