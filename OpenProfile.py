@@ -4,7 +4,7 @@ print("[Startup] Please wait, the application is starting...")
 class AppInfo:
     name = "OpenProfile"
     name_short = "OP"
-    version_number = "1.4.2.0"
+    version_number = "1.0.0.0"
     version_phase = "pre-beta"
     version_all = version_number + " " + version_phase
     orginization = "DeavmiOSS"
@@ -257,26 +257,17 @@ def begin():
     print("")
     person.interests_list = input("List your interests (Comma format): ")
     'If the person is below the age of 13, he is considered a kid/child (thanks mom ;P)'
-    if person.time_age < "13":
-        person.time_age_type = "kid"
+    if person.time_age < "13": person.time_age_type = "kid"
     'For all the ages below consider the person a teenager (thanks mom ;P, again)'
-    elif person.time_age == "13":
-        person.time_age_type = "teenager"
-    elif person.time_age == "14":
-        person.time_age_type = "teenager"
-    elif person.time_age == "15":
-        person.time_age_type = "teenager"
-    elif person.time_age == "16":
-        person.time_age_type = "teenager"
-    elif person.time_age == "17":
-        person.time_age_type = "teenager"
-    elif person.time_age == "18":
-        person.time_age_type = "teenager"
-    elif person.time_age == "19":
-        person.time_age_type = "teenager"
+    elif person.time_age == "13": person.time_age_type = "teenager"
+    elif person.time_age == "14": person.time_age_type = "teenager"
+    elif person.time_age == "15": person.time_age_type = "teenager"
+    elif person.time_age == "16": person.time_age_type = "teenager"
+    elif person.time_age == "17": person.time_age_type = "teenager"
+    elif person.time_age == "18": person.time_age_type = "teenager"
+    elif person.time_age == "19": person.time_age_type = "teenager"
     'For all the ages above 19, the person is considered an adult (thanks mom, ;P, lol, again) P.S I know, grandparents/people are not included'
-    elif person.time_age > "19":
-        person.time_age_type = "adult"
+    elif person.time_age > "19": person.time_age_type = "adult"
     misc.generation_complete == "true"
     'Jump to the mode selection definition'
     mode()
@@ -292,16 +283,11 @@ def mode():
     print("")
     misc.generation_complete == "true"
     misc.generation_option = input("Which would you like to generate (Mode selection): ")
-    if misc.generation_option == "1":
-        autobiography()
-    elif misc.generation_option == "2":
-        biography()
-    elif misc.generation_option == "3":
-        basicinfo()
-    elif misc.generation_option == "4":
-        contactinfo()
-    elif misc.generation_option == "5":
-        autobiography()
+    if misc.generation_option == "1": autobiography()
+    elif misc.generation_option == "2": biography()
+    elif misc.generation_option == "3":  basicinfo()
+    elif misc.generation_option == "4": contactinfo()
+    elif misc.generation_option == "5": autobiography()
     else:
         print("Invalid generation option selected!")
         mode()
@@ -317,8 +303,7 @@ def autobiography():
     print("that was born in " + person.location_cityofbirth + ", " + person.location_stateofbirth + ", " + person.location_countryofbirth + " in " +  person.time_dateofbirth_day + "/" +  person.time_dateofbirth_month + "/" +  person.time_dateofbirth_year + ".")
     print("I currently live in " + person.location_city + ", " + person.location_state + ", " + person.location_country + ".")
     'Put stuff here'
-    if misc.generation_option == "4":
-        biography()
+    if misc.generation_option == "4": biography()
     commandline()
 def biography():
     print("")
@@ -327,8 +312,7 @@ def biography():
     print("Below is your biography that " + app.name + " just generated:")
     print("")
     'Put stuff here'
-    if misc.generation_option == "4":
-	basicinfo()
+    if misc.generation_option == "4": basicinfo()
     commandline()
 def basicinfo():
     print("")
@@ -347,8 +331,7 @@ def basicinfo():
     print("Date of birth: " +  person.time_dateofbirth_day + "/" +  person.time_dateofbirth_month + "/" +  person.time_dateofbirth_year)
     print("Current location: " + person.location_city + ", " + person.location_state + ", " + person.location_country)
     'Put stuff here'
-    if misc.generation_option == "4":
-    	contactinfo()
+    if misc.generation_option == "4": contactinfo()
     commandline()
 def contactinfo():
     print("")
@@ -421,39 +404,20 @@ def gui():
     commandline()
 def commandline():
     user_input = input(">>>")
-    if user_input == "start":
-        begin()
-    elif user_input == "help":
-        help()
-    elif user_input == "exit":
-        exit()
-    elif user_input == "q":
-        exit()
-    elif user_input == "about":
-        about()
-    elif user_input == "about_gui":
-        about_gui()
-    elif user_input == "credits":
-        credits()
-    elif user_input == "show w":
-        license()
-    elif user_input == "show c":
-        license()
-    elif user_input == "license":
-        license()
-    elif user_input == "licenses":
-        licenses()
-    elif user_input == "restart":
-        app_start()
-    elif user_input == "gui":
-        gui()
-    elif user_input == "":
-        commandline()
+    if user_input == "start": begin()
+    elif user_input == "help": help()
+    elif user_input == "exit" or user_input == "q": exit()
+    elif user_input == "about": about()
+    elif user_input == "about_gui": about_gui()
+    elif user_input == "credits": credits()
+    elif user_input == "show w" or user_input == "show c" or unser_input == "license": license()
+    elif user_input == "licenses": licenses()
+    elif user_input == "restart": app_start()
+    elif user_input == "gui": gui()
+    elif user_input == "": commandline()
     elif user_input == "generate_info":
-        if misc.generation_complete == "true":
-            mode()
-        else:
-            print("No data collected. Cannot generate.")
+        if misc.generation_complete == "true": mode()
+        else: print("No data collected. Cannot generate.")
     else:
         print("Unknown command '" + user_input + "'")
         commandline()
