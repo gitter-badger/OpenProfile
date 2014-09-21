@@ -7,8 +7,8 @@ class AppInfo:
     version_number = "1.0.0.0"
     version_phase = "pre-beta"
     version_all = version_number + " " + version_phase
-    orginization = "DeavmiOSS"
-    orginization_message = "This is free, gratis and open-source software from " + orginization + "."
+    orginisation = "DeavmiOSS"
+    orginisation_message = "This is free, gratis and open-source software from " + orginization + "."
     description = name + " is a free, gratis and open-source easy to use autobiography and biography creator written in Python."
     description_part1 = name + " is a free, gratis and open-source easy to use "
     description_part2 = "autobiography and biography creator written in Python."
@@ -342,6 +342,12 @@ def contactinfo():
     print("Conatct info:")
     'Put stuff here'
     commandline()
+def export_to_text():
+    'Work in progress...'
+    export_filename = input("Enter the filename to export as: ")
+    print("Exporting to '" + export_filename + "' ...")
+    cmd = "echo " + person.rendered + " > " + export_filename
+    print("Exported sucessfully!")
 def about_gui():
    if buildconfig.gui_enabled == "true":
        print(misc.cli_line)
