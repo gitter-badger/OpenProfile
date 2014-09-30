@@ -417,7 +417,7 @@ def commandline():
     elif user_input == "licenses": licenses()
     elif user_input == "restart": app_start()
     elif user_input == "gui": gui()
-    elif user_input == : commandline()
+    elif user_input == "": commandline()
     elif user_input == "generate_info":
         if misc.generation_complete == "true": mode()
         else: print("No data collected. Cannot generate.")
@@ -427,7 +427,7 @@ def commandline():
 def app_start():
     print(misc.cli_line)
     print(app."OpenProfile" + " v" + app.version_all + " " +  buildconfig.build_machine_type)
-    print("Welcome to " + app."OpenProfile")
+    print("Welcome to OpenProfile!")
     print(misc.cli_line)
     print()
     print(app.license_startupmsg_line2)
