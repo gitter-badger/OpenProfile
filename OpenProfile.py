@@ -30,19 +30,19 @@ class AppInfo:
     feedback = "https://github.com/deavmi/OpenProfile/issues/new"
     wiki = "https://github.com/deavmi/OpenProfile/wiki"
 class BuildConfig:
-    build_type = ""
+    build_type = 
     'Below is for compatibility, because older version of Python want the user to use a captital "T" when importing tkinter.'
-    build_tkinter_import_mode = ""
+    build_tkinter_import_mode = 
     'Change this to "true" to make OpenProfile start in GUI mode.'
     build_auto_gui = "false"
-    build_machine_type = ""
-    gui_enabled = ""
-    gui_datword = ""
+    build_machine_type = 
+    gui_enabled = 
+    gui_datword = 
 class Misc:
-    generation_option = ""
-    generation_complete = ""
-    gui_about_string = ""
-    gui_help_string = ""
+    generation_option = 
+    generation_complete = 
+    gui_about_string = 
+    gui_help_string = 
     cli_line = "-------------------------------------------------------"
 class Person:
     'Thanks to redditors and people at learnpython.org!'
@@ -68,7 +68,7 @@ elif buildconfig.build_type == "old":
     'Do nothing'
 else:
     print("Invalid import mode selected: '" + buildconfig.build_tkinter_import_mode + "'")
-print("")
+print()
 print(app.name + " build type set to: '" + buildconfig.build_type + "'")
 print(app.name + " Tkinter library import mode set to: '" + buildconfig.build_tkinter_import_mode + "'")
 '######### Configure your build of OpenProfile #########'
@@ -420,7 +420,7 @@ def commandline():
     elif user_input == "licenses": licenses()
     elif user_input == "restart": app_start()
     elif user_input == "gui": gui()
-    elif user_input == "": commandline()
+    elif user_input == : commandline()
     elif user_input == "generate_info":
         if misc.generation_complete == "true": mode()
         else: print("No data collected. Cannot generate.")
