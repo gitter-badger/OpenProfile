@@ -430,7 +430,6 @@ def app_start():
     print("Welcome to " + app."OpenProfile")
     print(misc.cli_line)
     print()
-    print(app.license_startupmsg_line1)
     print(app.license_startupmsg_line2)
     print(app.license_startupmsg_line3)
     print(app.license_startupmsg_line4)
