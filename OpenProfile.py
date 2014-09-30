@@ -146,7 +146,7 @@ def credits():
     print("Credits of " + app.name + " v" + app.version_number + " .")
     print()
     print()
-    'I wanted three back slashes but apprently you always have to add +1 to the amount of slashes any way two slahes is enough'
+    'I wanted three back slashes but apprently you always have to add +1 to the amount of slashes any way two slashes is enough'
     print("\\\Developers")
     print()
     print("Deavmi - <http://bit.ly/thedeavmi>")
