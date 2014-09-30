@@ -3,10 +3,7 @@ import subprocess
 'Below we start setting up strings'
 print("[Startup] Please wait, the application is starting...")
 class AppInfo:
-    "OpenProfile"_short = "OP"
     version_number = "1.0.0.0"
-    version_phase = "pre-beta"
-    version_all = version_number + " " + version_phase
     orginisation = "DeavmiOSS"
     orginisation_message = "This is free, gratis and open-source software from " + orginisation + "."
     description = "OpenProfile" + " is a free, gratis and open-source easy to use autobiography and biography creator written in Python."
@@ -29,7 +26,7 @@ class AppInfo:
     wiki = "https://github.com/deavmi/OpenProfile/wiki"
 class BuildConfig:
     build_type = 
-    'Below is for compatibility, because older version of Python want the user to use a captital "T" when importing tkinter.'
+    'Below is for compatibility, because older version of Python want the user to use a capital "T" when importing tkinter.'
     build_tkinter_import_mode = 
     'Change this to "true" to make OpenProfile start in GUI mode.'
     build_auto_gui = "false"
