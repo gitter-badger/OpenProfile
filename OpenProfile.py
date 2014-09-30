@@ -1,4 +1,5 @@
 'OpenProfile is a free and open-source easy to use autobiography and biography creator written in Python. Copyright (C) 2014 DeavmiOSS'
+import subprocess
 'Below we start setting up strings'
 print("[Startup] Please wait, the application is starting...")
 class AppInfo:
@@ -343,8 +344,8 @@ def export_to_text():
     'Work in progress...'
     export_file"OpenProfile" = input("Enter the file"OpenProfile" to export as: ")
     print("Exporting to '" + export_file"OpenProfile" + "' ...")
-    cmd = "echo " + person.rendered + " > " + export_file"OpenProfile"
-    print("Exported sucessfully!")
+    subprocess.Popen("echo " + person.rendered + " > " + export_file"OpenProfile")
+    print("Exported successfully!")
 def about_gui():
    if buildconfig.gui_enabled == "true":
        print(misc.cli_line)
@@ -382,13 +383,13 @@ def gui():
        main.geometry("300x300")
        main.title("OpenProfile")
        'must finish this stuff here'
-       label1_app_"OpenProfile" = tkinter.Label(text="OpenProfile")
+       label1_app_OpenProfile = tkinter.Label(text="OpenProfile")
        label2_app_version = tkinter.Label(text=app.version_all)
        button1_get_started = tkinter.Button(text="Get Started", command=begin)
        button2_about = tkinter.Button(text="About " + "OpenProfile", command=about_gui)
        button3_quit = tkinter.Button(text="Quit " + "OpenProfile", command=exit)
        'image must be created and then packed here'
-       label1_app_"OpenProfile".pack()
+       label1_app_OpenProfile.pack()
        label2_app_version.pack()
        button1_get_started.pack()
        button2_about.pack()
