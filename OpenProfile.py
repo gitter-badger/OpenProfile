@@ -47,7 +47,7 @@ app = AppInfo()
 buildconfig = BuildConfig()
 misc = Misc()
 person = Person()
-print("[Startup] " + app."OpenProfile" + " build system is running...")
+print("[Startup] " + "OpenProfile" + " build system is running...")
 print()
 print("For more information visit online 'https://github.com/deavmi/OpenProfile/wiki/Different-builds-of-OpenProfile'")
 print()
@@ -66,8 +66,8 @@ elif buildconfig.build_type == "old":
 else:
     print("Invalid import mode selected: '" + buildconfig.build_tkinter_import_mode + "'")
 print()
-print(app."OpenProfile" + " build type set to: '" + buildconfig.build_type + "'")
-print(app."OpenProfile" + " Tkinter library import mode set to: '" + buildconfig.build_tkinter_import_mode + "'")
+print("OpenProfile" + " build type set to: '" + buildconfig.build_type + "'")
+print("OpenProfile" + " Tkinter library import mode set to: '" + buildconfig.build_tkinter_import_mode + "'")
 '######### Configure your build of OpenProfile #########'
 
 '######'
@@ -110,16 +110,16 @@ if  buildconfig.gui_enabled == "true":
         print("Importing GUI library...")
         import Tkinter
         print("Importing GUI library... [Done]")
-print(app."OpenProfile" + " build system is running... [Done]")
+print("OpenProfile" + " build system is running... [Done]")
 '######### End of next stage awesome stuff #########'
 'Getting everything referenced so that we can, "refer"-lol, to them when we need to a.k.a go to them-(the definitions)'
 def exit():
     print()
-    print("Thank you for using " + app."OpenProfile" + ".")
+    print("Thank you for using " + "OpenProfile" + ".")
 def about():
     print()
     print(misc.cli_line)
-    print("                      " + app."OpenProfile")
+    print("                      " + "OpenProfile")
     print("                   v" + app.version_all)
     print()
     print(app.description_part1)
@@ -140,7 +140,7 @@ def about():
     commandline()
 def credits():
     print()
-    print("Credits of " + app."OpenProfile" + " v" + app.version_number + " .")
+    print("Credits of " + "OpenProfile" + " v" + app.version_number + " .")
     print()
     print()
     'I wanted three back slashes but apprently you always have to add +1 to the amount of slashes any way two slashes is enough'
@@ -181,9 +181,9 @@ def license():
     commandline()
 def licenses():
     print()
-    print("Below are the links to the licenses for all the things used in " + app."OpenProfile" + ":")
+    print("Below are the links to the licenses for all the things used in " + "OpenProfile" + ":")
     print()
-    print("To view " + app."OpenProfile" + "'s license type 'show c'.")
+    print("To view " + "OpenProfile" + "'s license type 'show c'.")
     print()
     print("Python Programming Language - <http://docs.python.org/3/license.html> (PSF LICENSE AGREEMENT)")
     print("20 Flat Icons - <http://www.graphicsfuel.com> (Free for commercial use)")
@@ -201,7 +201,7 @@ def help():
         misc.gui_about_string = "about_gui     Displays about info in GUI mode (Not available in this build type)"
         misc.gui_help_string = "gui           Starts OpenProfile in GUI mode (Not available in this build type)"
     print()
-    print("Here are a list of commands that can be used in " + app."OpenProfile"_short + ".")
+    print("Here are a list of commands that can be used in " + "OpenProfile"_short + ".")
     print()
     print("about         Displays about info")
     print(misc.gui_about_string)
@@ -210,12 +210,12 @@ def help():
     print("exit          Terminates the program")
     print(misc.gui_help_string)
     print("help          Displays list of commands")
-    print("license       Displays the " + app."OpenProfile" + " license")
+    print("license       Displays the " + "OpenProfile" + " license")
     print("licenses      Displays all licenses")
     print("q             Universally used for quitting")
-    print("restart       Restarts " + app."OpenProfile")
-    print("show c        Displays the " + app."OpenProfile" + " license")
-    print("show w        Displays the " + app."OpenProfile" + " license")
+    print("restart       Restarts " + "OpenProfile")
+    print("show c        Displays the " + "OpenProfile" + " license")
+    print("show w        Displays the " + "OpenProfile" + " license")
     print("start         Starts OpenProfile operation")
     print()
     print("For more information visit online 'https://github.com/deavmi/OpenProfile/wiki/Commands'")
@@ -293,7 +293,7 @@ def autobiography():
     print()
     print(misc.cli_line)
     print()
-    print("Below is your autobiography that " + app."OpenProfile" + " just generated:")
+    print("Below is your autobiography that " + "OpenProfile" + " just generated:")
     print()
     print("My "OpenProfile" is " + person."OpenProfile"s_first"OpenProfile" + person."OpenProfile"s_middle"OpenProfile" + person."OpenProfile"s_maiden"OpenProfile" + person."OpenProfile"s_last"OpenProfile")
     print("but most people call me " + person."OpenProfile"s_nick"OpenProfile" + ". I am a " + person.time_age + " year old " + person.time_age_type)
@@ -306,7 +306,7 @@ def biography():
     print()
     print(misc.cli_line)
     print()
-    print("Below is your biography that " + app."OpenProfile" + " just generated:")
+    print("Below is your biography that " + "OpenProfile" + " just generated:")
     print()
     'Put stuff here'
     if misc.generation_option == "4": basicinfo()
@@ -315,7 +315,7 @@ def basicinfo():
     print()
     print(misc.cli_line)
     print()
-    print("Below is your basic info that " + app."OpenProfile" + " just generated:")
+    print("Below is your basic info that " + "OpenProfile" + " just generated:")
     print()
     print("Basic Info")
     print()
@@ -334,7 +334,7 @@ def contactinfo():
     print()
     print(misc.cli_line)
     print()
-    print("Below is your conatct info that " + app."OpenProfile" + " just generated:")
+    print("Below is your conatct info that " + "OpenProfile" + " just generated:")
     print()
     print("Conatct info:")
     'Put stuff here'
@@ -356,7 +356,7 @@ def about_gui():
        print("Setting up the GUI...")
        about = tkinter.Tk()
        about.geometry("300x300")
-       about.title("About " + app."OpenProfile")
+       about.title("About " + "OpenProfile")
        print("Setting up the GUI... [Done]")
        print("Creating the window...")
        about.mainloop()
@@ -380,13 +380,13 @@ def gui():
        print("Setting up the GUI...")
        main = tkinter.Tk()
        main.geometry("300x300")
-       main.title(app."OpenProfile")
+       main.title("OpenProfile")
        'must finish this stuff here'
-       label1_app_"OpenProfile" = tkinter.Label(text=app."OpenProfile")
+       label1_app_"OpenProfile" = tkinter.Label(text="OpenProfile")
        label2_app_version = tkinter.Label(text=app.version_all)
        button1_get_started = tkinter.Button(text="Get Started", command=begin)
-       button2_about = tkinter.Button(text="About " + app."OpenProfile", command=about_gui)
-       button3_quit = tkinter.Button(text="Quit " + app."OpenProfile", command=exit)
+       button2_about = tkinter.Button(text="About " + "OpenProfile", command=about_gui)
+       button3_quit = tkinter.Button(text="Quit " + "OpenProfile", command=exit)
        'image must be created and then packed here'
        label1_app_"OpenProfile".pack()
        label2_app_version.pack()
@@ -426,7 +426,7 @@ def commandline():
         commandline()
 def app_start():
     print(misc.cli_line)
-    print(app."OpenProfile" + " v" + app.version_all + " " +  buildconfig.build_machine_type)
+    print("OpenProfile" + " v" + app.version_all + " " +  buildconfig.build_machine_type)
     print("Welcome to OpenProfile!")
     print(misc.cli_line)
     print()
