@@ -1,5 +1,6 @@
 'OpenProfile is a free and open-source easy to use autobiography and biography creator written in Python. Copyright (C) 2014 DeavmiOSS'
 import subprocess
+import tkinter
 'Below we start setting up strings'
 print("[Startup] Please wait, the application is starting...")
 class AppInfo:
@@ -24,92 +25,15 @@ class AppInfo:
     repository = "https://github.com/deavmi/OpenProfile"
     feedback = "https://github.com/deavmi/OpenProfile/issues/new"
     wiki = "https://github.com/deavmi/OpenProfile/wiki"
-class BuildConfig:
-    build_type = 
-    'Below is for compatibility, because older version of Python want the user to use a capital "T" when importing tkinter.'
-    build_tkinter_import_mode = 
-    'Change this to "true" to make OpenProfile start in GUI mode.'
-    build_auto_gui = "false"
-    build_machine_type = 
-    gui_enabled = 
-    gui_datword = 
 class Misc:
-    generation_option = 
-    generation_complete = 
-    gui_about_string = 
-    gui_help_string = 
+    generation_option = ""
+    generation_complete = ""
     cli_line = "-------------------------------------------------------"
 class Person:
     'Thanks to redditors and people at learnpython.org!'
 app = AppInfo()
-buildconfig = BuildConfig()
 misc = Misc()
 person = Person()
-print("[Startup] " + "OpenProfile" + " build system is running...")
-print()
-print("For more information visit online 'https://github.com/deavmi/OpenProfile/wiki/Different-builds-of-OpenProfile'")
-print()
-buildconfig.build_type = input("Enter you preferred build type: ")
-if buildconfig.build_type == "OpenProfile":
-    'Do nothing'
-elif buildconfig.build_type == "OpenProfile-lite":
-    'Do nothing'
-else:
-    print("Invalid build type selected: '" + buildconfig.build_type + "'")
-buildconfig.build_tkinter_import_mode = input("Tkinter library import mode: ")
-if buildconfig.build_type == "modern":
-    'Do nothing'
-elif buildconfig.build_type == "old":
-    'Do nothing'
-else:
-    print("Invalid import mode selected: '" + buildconfig.build_tkinter_import_mode + "'")
-print()
-print("OpenProfile" + " build type set to: '" + buildconfig.build_type + "'")
-print("OpenProfile" + " Tkinter library import mode set to: '" + buildconfig.build_tkinter_import_mode + "'")
-'######### Configure your build of OpenProfile #########'
-
-'######'
-print("Checking for the selected build type's environment...")
-'Below are the different build types, their code is seperated by these "#"'
-'###### OpenProfile-system ######'
-if buildconfig.build_type == "OpenProfile":
-    print("Checking for the selected build type's environment... [Done]")
-    print("Setting up the environment for the selected build type...")
-    buildconfig.build_machine_type = "[Windows/Mac OSX/GNU-Linux]"
-    buildconfig.gui_enabled = "true"
-    print("Setting up the environment for the selected build type... [Done]")
-'#################################'
-
-'###### OpenProfile-lite-system ######'
-if buildconfig.build_type == "OpenProfile-lite":
-    print("Checking for the selected build type's environment... [Done]")
-    print("Setting up the environment for the selected build type...")
-    buildconfig.build_machine_type = "[Windows/Mac OSX/GNU-Linux (lite)]"
-    buildconfig.gui_enabled = "false"
-    print("Setting up the environment for the selected build type... [Done]")
-'#################################'
-
-'End of awesome stuff'
-'Next stage of awesome stuff'
-print("Checking if the GUI needs to be enabled...")
-if  buildconfig.gui_enabled == "true":
-    'Sets up dat string'
-    buildconfig.gui_datword = "enabled"
-    'Imports the "tkinter" library"'
-    print("Checking if the GUI needs to be enabled... Yes")
-    print("Checking the library import mode...")
-    if  buildconfig.build_tkinter_import_mode == "modern":
-        print("Library import mode has been set to: modern")
-        print("Importing GUI library...")
-        import tkinter
-        print("Importing GUI library... [Done]")
-    if  buildconfig.build_tkinter_import_mode == "old":
-        print("Library import mode has been set to: old")
-        print("Importing GUI library...")
-        import Tkinter
-        print("Importing GUI library... [Done]")
-print("OpenProfile" + " build system is running... [Done]")
-'######### End of next stage awesome stuff #########'
 'Getting everything referenced so that we can, "refer"-lol, to them when we need to a.k.a go to them-(the definitions)'
 def exit():
     print()
