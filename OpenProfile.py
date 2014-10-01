@@ -1,5 +1,5 @@
-'OpenProfile is a free and open-source easy to use autobiography and biography creator written in Python. Copyright (C) 2014 DeavmiOSS'
-import subprocess
+'OpenProfile is a free and open-source easy to use autobiography and biography creator written in Python.'
+import os
 import tkinter
 'Below we start setting up strings'
 print("[Startup] Please wait, the application is starting...")
@@ -265,7 +265,7 @@ def export_to_text():
     'Work in progress...'
     export_file"OpenProfile" = input("Enter the file"OpenProfile" to export as: ")
     print("Exporting to '" + export_file"OpenProfile" + "' ...")
-    subprocess.Popen("echo " + person.rendered + " > " + export_file"OpenProfile")
+    os.system("echo " + person.rendered + " > " + export_file"OpenProfile")
     print("Exported successfully!")
 def about_gui():
    if buildconfig.gui_enabled == "true":
